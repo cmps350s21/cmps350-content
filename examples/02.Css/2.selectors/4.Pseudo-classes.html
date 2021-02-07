@@ -36,8 +36,10 @@
         }
 
         .quote {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif}
-        .quote:before { content: "«"; }
-        .quote:after { content: "»"; }
+
+        /* More info @ https://developer.mozilla.org/en-US/docs/Web/CSS/::before */
+        .quote::before { content: "«";  color: lightskyblue;}
+        .quote::after { content: "»";  color: lightskyblue;}
 
     </style>
 </head>

@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>List styles</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" >
     <style>
         .style-none {
             list-style-type: none;
         }
 
         .style-circle {
-            list-style-type: disc;
+            list-style-type: circle;
         }
 
         .rocket-dot {
@@ -18,20 +18,34 @@
         }
 
         .style-alpha {
-            list-style-type: upper-roman;
+            list-style-type: lower-alpha;
         }
 
         .style-roman {
             list-style-type: upper-roman;
         }
 
-        .style-tick li:before {
+        .style-tick li::before {
             content: '✓';
         }
+
     </style>
 </head>
 
 <body>
+<p>
+    <i class="fas fa-language"></i> Languages <i class="fas fa-flag"></i>
+</p>
+
+<ul class="fa-ul">
+   <li>
+       <i class="fab fa-java"></i> Java
+   </li>
+    <li>
+        <i class="fab fa-js"></i></i> JavaScript
+    </li>
+</ul>
+
 <ul class="style-none">
     <li>
         Item 10
@@ -125,9 +139,9 @@
 </ul>
 
 <p>QU Engineering study programs</p>
-<ul class="fa-ul">
+<ul class="fa-ul style-program">
     <li>
-        <span class="fa-li"><i class="fas fa-user-graduate"></i></span>
+
         Architecture
     </li>
     <li>

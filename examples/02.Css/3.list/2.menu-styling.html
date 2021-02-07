@@ -4,20 +4,17 @@
     <meta charset="UTF-8">
     <title>Menu Styling</title>
     <style>
-        nav
-        {
-            text-align : center;
+        .center {
+            text-align: center;
         }
-
-        nav ul { margin: 5px; }
 
         nav ul li
         {
             display: inline;
-            padding:5px;
-            text-align:left;
-            font-size:1.5em;
-            font-weight:bold;
+            padding: 5px;
+            text-align: left;
+            font-size: 1.5rem;
+            font-weight: bold;
         }
 
         ul li a:hover {
@@ -25,23 +22,18 @@
             text-decoration: overline;
         }
 
-        nav ul li.selected a {
-            color: dodgerblue;
-            text-decoration: overline;
-        }
     </style>
 </head>
 <body>
-    <header>
-        <h2>This is page heading</h2>
+    <header class="center">
+        <h2>Welcome to our super cool page!</h2>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
-    </nav>
-    <a href="http://qu.edu.qu">QU</a>
 </body>
 </html>

@@ -1,13 +1,12 @@
 /* CSS Document */
-
 a {
 	text-decoration: none;
 }
 
 a:hover { 
 	text-decoration: underline;
-	color: red;
-	background-color: greenyellow;
+	color: firebrick;
+	background-color: lightgoldenrodyellow;
 }
 
 li em   { 

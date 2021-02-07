@@ -11,7 +11,7 @@
         }
 
         .labelForCheckbox {
-            width: 200px;
+            width: 300px;
             text-align: left;
             margin-left: 100px;
         }
@@ -66,13 +66,17 @@
     <!-- Text inputs -->
     <fieldset>
         <legend>Contact Information</legend>
-        Title:
-        <input type="text" id="title" name="title" list="titleDataList" autofocus placeholder="select a title">
+        <label for="title">Title: </label>
+
+        <input type="text" id="title" name="title" list="titleDataList" autofocus autocomplete="off"
+               placeholder="Select a title">
+
         <datalist id="titleDataList">
             <option label="Mr." value="Mr."></option>
             <option label="Mrs." value="Mrs."></option>
             <option label="Ms." value="Ms."></option>
         </datalist>
+
         <br>
         <label for="firstName">First name: </label>
         <input type="text" maxlength="20" id="firstName" name="firstName" placeholder="Enter first name" required>
@@ -105,8 +109,7 @@
     <fieldset>
         <legend>Academic information</legend>
         <label for="degree">Degree</label>
-        <select name="degree" id="degree" multiple
-         oninput="selectedDegree.value = degree.value">
+        <select name="degree" id="degree" multiple size="3">
             <option value="BA">Bachelor of Art</option>
             <option value="BS" selected>Bachelor of Science</option>
             <option value="MC" selected>Master of Computing</option>
@@ -131,7 +134,7 @@
 
         <!-- Multi Selections-->
         <label for="occupation">Occupation:</label>
-        <select id="occupation" name="occupation" size="3" multiple>
+        <select id="occupation" name="occupation" size="5" multiple>
             <optgroup label="Technical">
                 <option value="dev">Developer</option>
                 <option value="C++">C++ Developer</option>
@@ -147,7 +150,6 @@
 
         <br>
         <label>Gender:</label>
-
             <input type="radio" name="gender" value="male">
             Male
 
@@ -199,11 +201,11 @@
     <input type="week" id="week-input"><br>
     <label for="yearsExperience">Years of experience: </label>
     1<input type="range" id="yearsExperience" name="range-data"
-            min="1" max="30" value="1" step="5"
+            min="1" max="30" value="1" step="2"
             oninput="selectedExperience.value = yearsExperience.value"
             >30
     Selected Value:
-    <output id="selectedExperience" for="yearsExperience"></output>
+    <output id="selectedExperience" ></output>
     <!--output id="selectedValue" for="yearsExperience">3</output-->
     <br>
     <label for="quantity">Quantity: </label>
