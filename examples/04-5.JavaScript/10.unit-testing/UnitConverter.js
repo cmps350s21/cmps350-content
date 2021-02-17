@@ -19,10 +19,10 @@ class UnitConverter {
         return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
     }
 
-    kgToOunce
+    /*kgToOunce
     kgToPound
     meterToInch
-    meterToFoot
+    meterToFoot*/
 
     kgToOunce(val) {
         const multiplier = this.unitMaps.find(u => u.to == 'ounce').multiplier;
@@ -49,7 +49,7 @@ class UnitConverter {
     }
 }
 
-module.exports = new UnitConverter();
+export default new UnitConverter();
 
 /*
 const unitConverter = new UnitConverter();

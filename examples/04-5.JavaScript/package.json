@@ -1,12 +1,12 @@
 {
   "name": "03-5.javascript",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "test": "mocha -- **/*.spec.js"
   },
   "devDependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^5.2.0"
+    "chai": "^4.3.0",
+    "mocha": "^8.3.0"
   }
-
 }

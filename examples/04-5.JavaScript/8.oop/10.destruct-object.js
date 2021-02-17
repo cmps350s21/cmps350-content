@@ -1,10 +1,13 @@
-let person = {
-    name: 'Samir Saghir',
+const student = {
+    firstname: 'Samir',
+    lastname: 'Saghir',
+    age: '18',
+    gpa: 3.6,
     address: {
         city: 'Doha',
         street: 'University St'
     }
 };
 
-let { name, address: {city} } = person;
-console.log(name, city);
+const { firstname, address: {city}, ...otherDetails} = student;
+console.log(firstname, city, otherDetails);

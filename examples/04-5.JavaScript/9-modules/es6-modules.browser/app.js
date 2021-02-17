@@ -6,5 +6,5 @@ function getGreeting () {
     return element;
 }
 
-console.log("from app.js");
+console.log(">> from app.js");
 document.body.appendChild( getGreeting() );

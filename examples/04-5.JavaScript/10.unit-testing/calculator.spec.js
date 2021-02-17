@@ -1,5 +1,5 @@
-const calculator = require('./calculator');
-const expect = require("chai").expect;
+import calculator from './calculator.js';
+import {expect} from 'chai';
 
 describe("Calculator Test Suite", () => {
 
@@ -73,6 +73,5 @@ describe("Calculator Test Suite", () => {
        expect(deepObj).to.have.nested.property('green.tea', 'matcha');
        expect(deepObj).to.have.nested.property('teas[1]', 'matcha');
        expect(deepObj).to.have.nested.property('teas[2].tea', 'konacha');
-
     })
 })

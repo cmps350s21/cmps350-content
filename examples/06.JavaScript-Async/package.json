@@ -1,0 +1,14 @@
+{
+  "name": "async-js",
+  "version": "0.0.1",
+  "dependencies": {
+    "request": "latest",
+    "fs-extra": "latest",
+    "node-fetch": "latest"
+  },
+  "devDependencies": {
+    "mocha": "latest",
+    "chai": "latest",
+    "chai-http": "latest"
+  }
+}
