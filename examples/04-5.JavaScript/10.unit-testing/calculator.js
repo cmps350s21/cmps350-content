@@ -11,4 +11,5 @@ class Calculator {
     }
 }
 
+// Default Export
 export default new Calculator();

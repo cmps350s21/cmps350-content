@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <style>
+        #operation {
+            width: 40px
+        }
+
+        .mainPage {
+            text-align: center;
+        }
+    </style>
+
+    <script src="js/calculator.js"></script>
+</head>
+<body>
+<div class="mainPage">
+    <h1>Calculator</h1>
+    <form>
+        <input type="text" id="num1" required/>
+        <select id="operation">
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+        </select>
+        <input type="text" id="num2" required/>
+        <br><br>
+        <input type="button" value="Compute" onclick="handleCompute()"/>
+        <input type="button" value="Compute (event listener in JS)" id="btnCompute"/>
+        <br><br>
+        <div id="result"></div>
+    </form>
+</div>
+</body>
+</html>

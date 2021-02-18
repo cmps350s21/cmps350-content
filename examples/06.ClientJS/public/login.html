@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <script>
+        async function login() {
+            const email = document.querySelector("#email").value;
+            const password = document.querySelector("#password").value;
+            const loginInfo = {email, password};
+            console.log("Login info", loginInfo);
+
+            const url = '/api/login';
+            const response = await fetch(url, {
+                method: 'post',
+                headers: {"Content-Type": "application/json"},
+                body : JSON.stringify(loginInfo)
+            });
+
+            const loginResponse = await response.json();
+            console.log("loginResponse", loginResponse);
+        }
+    </script>
+</head>
+<body>
+    <label for="email">Email</label>
+    <input type="email" id="email">
+
+    <br>
+    <label for="password">Password</label>
+    <input type="password" id="password">
+    <br>
+
+    <button onclick="login()">Submit</button>
+</body>
+</html>

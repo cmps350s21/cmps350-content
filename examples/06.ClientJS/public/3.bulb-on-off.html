@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Handlers</title>
+    <script>
+        function handleBulbSwitch(event) {
+            const img = document.querySelector('#bulbImage');
+            console.log(event.target.value);
+            if (event.target.value === "Turn on the light") {
+                img.src = 'images/bulbon.png';
+                event.target.value = "Turn off the light";
+            } else {
+                img.src = 'images/bulboff.png';
+                event.target.value = "Turn on the light";
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>Using JavaScript to change the src (source) attribute of an image.</p>
+
+    <img id="bulbImage" src="images/bulboff.png" style="height: 300px"  >
+    <br>
+    <input type="button" id="btnSwitch" value="Turn on the light" onclick="handleBulbSwitch(event)" >
+</body>
+</html>
