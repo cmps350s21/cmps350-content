@@ -1,6 +1,19 @@
 // Named Exports
-export const add = (x, y) => x + y;
-export const multiply = (x, y) => x * y;
+// public exposed function
+export function sum(...args) {
+    log('sum', args);
+    return args.reduce((num, sum) => sum + num);
+}
+
+export function multiply(...args) {
+    log('multiply', args);
+    return args.reduce((num, product) => product * num);
+}
+
+// private function
+function log(...msg) {
+    console.log(...msg);
+}
 
 // Another way of doing it
 //export {add, multiply}
