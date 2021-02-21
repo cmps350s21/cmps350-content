@@ -8,64 +8,20 @@ document.addEventListener("DOMContentLoaded", async () => {
  *****************************/
 //region Web API Calls
 async function getHeroes() {
-    const url = '/api/heroes';
+    const url = './data/hero.json';
     const response = await fetch(url);
     return await response.json();
 }
 
 async function getHero(heroId) {
-    const url = `/api/heroes/${heroId}`;
-    try {
-        log('');
-        const response = await fetch(url);
-        return await response.json();
-    } catch (e) {
-        log(e);
+    const heroes = await this.getHeroes();
+    const hero = heroes.find(h => h.id == heroId);
+    //console.log("getHero(heroId)", hero)
+    if (hero) {
+        return hero;
     }
-}
-
-async function addHero(hero) {
-    const url = '/api/heroes/';
-    console.log(url);
-    try {
-        log(''); // Clear any error message displayed on the screen
-        await fetch(url, {
-            method: "post",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(hero)
-        });
-    } catch (e) {
-        log(e);
-    }
-}
-
-async function updateHero(hero) {
-    const url = `/api/heroes/${hero.id}`;
-    console.log(url);
-    try {
-        log(''); // Clear any error message displayed on the screen
-        await fetch(url, {
-            method: "put",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(hero)
-        });
-    } catch (e) {
-        log(e);
-    }
-}
-
-async function deleteHero(heroId) {
-    const url = `/api/heroes/${heroId}`;
-    let success = false;
-    console.log(url);
-    try {
-        log(''); // Clear any error message displayed on the screen
-        await fetch(url, {method: "delete"});
-        success = true;
-    } catch (e) {
-        log(e);
-    } finally {
-        return success;
+    else {
+        throw "Not found";
     }
 }
 
@@ -126,12 +82,8 @@ async function handleSubmitHero(event) {
     event.preventDefault();
 
     const hero = formToObject(form);
-    //If hero.id has value then do update otherwise do add
-    if (hero.id) {
-        await updateHero(hero);
-    } else {
-        await addHero(hero);
-    }
+    console.log(hero);
+    //ToDo: Make API call to add/update hero
     //return to the home page
     window.location.href = "index.html";
 }
@@ -139,10 +91,8 @@ async function handleSubmitHero(event) {
 async function handleDeleteHero(id) {
     const confirmed = confirm(`Are you sure you want to delete hero #${id}?`);
     if (confirmed) {
-        const deleted = await deleteHero(id);
-        if (deleted) {
-            document.querySelector(`#row-${id}`).remove();
-        }
+        // ToDo: API call to delete hero by Id
+        document.querySelector(`#row-${id}`).remove();
     }
 }
 //endregion

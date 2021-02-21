@@ -3,19 +3,29 @@
 <head>
     <title>Calculator</title>
     <style>
+        .title {
+            color: #0053ba;
+            background: lightgoldenrodyellow;
+        }
+    </style>
+    <style>
         #operation {
             width: 40px
         }
 
-        .mainPage {
+        main {
             text-align: center;
         }
     </style>
 
-    <script src="js/calculator.js"></script>
+    <script>
+
+    </script>
+
+    <script type="module" src="js/calculator-handlers.js"></script>
 </head>
 <body>
-<div class="mainPage">
+<main>
     <h1>Calculator</h1>
     <form>
         <input type="text" id="num1" required/>
@@ -32,6 +42,6 @@
         <br><br>
         <div id="result"></div>
     </form>
-</div>
+</main>
 </body>
 </html>
