@@ -31,7 +31,6 @@ input,
   color: #ff6f47;
   background: #f7fffe;
   cursor: pointer;
-  transition: all 0.3s ease;
 }
 
 .todo-container {
@@ -41,7 +40,7 @@ input,
 }
 
 .todo-list {
-  min-width: 30%;
+  min-width: 40%;
   list-style: none;
 }
 
@@ -73,11 +72,6 @@ input,
 }
 .todo-item {
   padding: 0rem 0.5rem;
-}
-
-.fall {
-  transform: translateY(10rem) rotateZ(20deg);
-  opacity: 0;
 }
 
 .completed {

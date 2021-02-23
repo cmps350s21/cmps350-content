@@ -1,36 +1,25 @@
+import * as heroRepository from './hero-repository.js';
+
 //After the document is loaded in the browser
 document.addEventListener("DOMContentLoaded", async () => {
     await handleInitPage();
+    /*
+       Because we set type='module' in <script type="module" src="./app.js"></script>
+       Attach these functions to the window object to make
+       them available to the html page.
+       Or use addEventListener to bind handler.
+     */
+    window.handleAddHero = handleAddHero;
+    window.handleUpdateHero = handleUpdateHero;
+    window.handleSubmitHero = handleSubmitHero;
+    window.handleDeleteHero = handleDeleteHero;
 });
-
-/*****************************
-    Functions to call Web API
- *****************************/
-//region Web API Calls
-async function getHeroes() {
-    const url = './data/hero.json';
-    const response = await fetch(url);
-    return await response.json();
-}
-
-async function getHero(heroId) {
-    const heroes = await this.getHeroes();
-    const hero = heroes.find(h => h.id == heroId);
-    //console.log("getHero(heroId)", hero)
-    if (hero) {
-        return hero;
-    }
-    else {
-        throw "Not found";
-    }
-}
 
 async function getHeroForm() {
     const url = `hero-form.html`;
     const response = await fetch(url);
     return await response.text();
 }
-//endregion
 
 /*****************************
  Functions to handle UI Events
@@ -39,7 +28,7 @@ async function getHeroForm() {
 async function handleInitPage() {
     try {
         log(''); // Clear any error message displayed on the screen
-        const heroes = await getHeroes();
+        const heroes = await heroRepository.getHeroes();
         console.log(heroes);
         const heroesDiv = document.querySelector("#heroes");
         heroesDiv.innerHTML = heroes2Html(heroes);
@@ -48,7 +37,7 @@ async function handleInitPage() {
     }
 }
 
-async function handleUpdateHero(event, heroId) {
+export async function handleUpdateHero(event, heroId) {
     event.preventDefault();
     //console.log("heroId:", heroId, event);
 
@@ -56,7 +45,7 @@ async function handleUpdateHero(event, heroId) {
     const heroForm = await getHeroForm();
     heroesDiv.innerHTML = heroForm;
 
-    const hero = await getHero(heroId);
+    const hero = await heroRepository.getHero(heroId);
 
     //Fill the form field with the hero data fetched from the Web API
     document.querySelector("#id").value = hero.id;
@@ -65,7 +54,7 @@ async function handleUpdateHero(event, heroId) {
     document.querySelector("#quote").value = hero.quote;
 }
 
-async function handleAddHero(event) {
+export async function handleAddHero(event) {
     event.preventDefault();
     log(''); // Clear any error message displayed on the screen
     const heroesDiv = document.querySelector("#heroes");
@@ -73,7 +62,7 @@ async function handleAddHero(event) {
     heroesDiv.innerHTML = heroForm;
 }
 
-async function handleSubmitHero(event) {
+export async function handleSubmitHero(event) {
     const form = event.target.form;
     const isFormValid = form.checkValidity();
     if (!isFormValid) return;
@@ -84,14 +73,20 @@ async function handleSubmitHero(event) {
     const hero = formToObject(form);
     console.log(hero);
     //ToDo: Make API call to add/update hero
+    if (hero.id) {
+        await heroRepository.updateHero(hero);
+    } else {
+        await heroRepository.addHero(hero);
+    }
     //return to the home page
     window.location.href = "index.html";
 }
 
-async function handleDeleteHero(id) {
+export async function handleDeleteHero(id) {
     const confirmed = confirm(`Are you sure you want to delete hero #${id}?`);
     if (confirmed) {
-        // ToDo: API call to delete hero by Id
+        // Delete hero by Id from localStorage
+        heroRepository.deleteHero(id);
         document.querySelector(`#row-${id}`).remove();
     }
 }
