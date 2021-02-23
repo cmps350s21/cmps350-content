@@ -12,13 +12,13 @@
     "heroType": "Companion"
   },
   {
-    "id": "3",
+    "id": 3,
     "name": "Umar ibn Al-Khattāb",
     "heroType": "Companion",
     "quote": "عليك بالصدق و إن قتلك"
   },
   {
-    "id": "4",
+    "id": 4,
     "name": "Uthman Ibn Affan",
     "heroType": "Companion",
     "quote": "لو أن قلوبنا طهرت ما شبعنا من كلام ربِّنا، وإني لأكره أن يأتي عليَّ يوم لا أنظر في المصحف"
@@ -30,7 +30,7 @@
     "heroType": "Companion"
   },
   {
-    "id": "6",
+    "id": 6,
     "name": "Imam Maliq",
     "heroType": "Scholar",
     "quote": "Knowledge does not come but you have to come to it"

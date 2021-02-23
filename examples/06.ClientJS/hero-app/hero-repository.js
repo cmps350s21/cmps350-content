@@ -1,78 +1,74 @@
+import { openDB, deleteDB } from 'https://unpkg.com/idb?module';
+
+const dbName = 'heroes-db';   // string, database name
+const dbVersion = 1;   // integer, YOUR database version (not IndexedDB version)
+const heroesStoreName = 'heroes';  // Name of your collection of documents
+
 async function fetchHeroes() {
     const url = './data/hero.json';
     const response = await fetch(url);
     return await response.json();
 }
 
-export async function getHeroes() {
-    if (!localStorage.heroes) {
+async function initDB() {
+    /* Delete a database. Useful in development when
+       you want to initialize your database schema. */
+    //await deleteDB(dbName);
+
+    const db = await openDB(dbName, dbVersion, {
+            // This callback only runs ONE time per database version.
+            // Use it to create object stores.
+            upgrade(db) {
+                // This is how we create object stores: bit complicated 😢
+                if (!db.objectStoreNames.contains(heroesStoreName)) {
+                    /* keyPath: specify the primary key for each object in the object store.
+                       Set autoIncrement to true if you want IndexedDB to handle primary
+                       key generation for you */
+                    db.createObjectStore(heroesStoreName, {
+                        keyPath: 'id', autoIncrement: true,
+                    });
+                }
+            },
+        },
+    );
+    /****************************************
+     *** Init DB with data from JOSN file ***
+     ****************************************/
+    const heroesCount = await db.count(heroesStoreName);
+    if (heroesCount === 0) {
         const heroes = await fetchHeroes();
-        localStorage.heroes = JSON.stringify(heroes);
-        return heroes;
+        for (const hero of heroes) {
+            await db.add(heroesStoreName, hero);
+        }
     }
-    return JSON.parse(localStorage.heroes);
+    return db;
+}
+
+export async function getHeroes() {
+    const db = await initDB();
+    return await db.getAll(heroesStoreName);
 }
 
 export async function getHero(heroId) {
-    const heroes = await this.getHeroes();
-    const hero = heroes.find(h => h.id == heroId);
-    //console.log("getHero(heroId)", hero)
-    if (hero) {
-        return hero;
-    }
-    else {
-        throw "Not found";
-    }
+    const db = await openDB(dbName, dbVersion);
+    return await db.get(heroesStoreName, heroId);
 }
 
-export function addHero(hero) {
-    let heroes;
-    if (localStorage.heroes === null) {
-        heroes = [];
-    } else {
-        heroes = JSON.parse(localStorage.heroes);
-    }
-
-    //Get the last Id used +1
-    let maxId = Math.max( ...heroes.map(h => h.id) ) + 1;
-    console.log("maxId", maxId);
-
-    hero.id = maxId;
-    heroes.push(hero);
-    localStorage.heroes = JSON.stringify(heroes);
+export async function addHero(hero) {
+    // Remove the hero id to ensure that the database will auto-assign an id
+    delete hero.id;
+    const db = await openDB(dbName, dbVersion);
+    // Returns the id assigned by the database
+    const heroId = await db.add(heroesStoreName, hero);
+    return heroId;
 }
 
-export function updateHero(hero) {
-    let heroes;
-    if (localStorage.heroes === null) {
-        heroes = [];
-    } else {
-        heroes = JSON.parse(localStorage.heroes);
-    }
-
-    // Look for the hero to be updated then update it
-    const foundIndex = heroes.findIndex(h => h.id == hero.id);
-    //console.log("heroRepository.updateHero.foundIndex", foundIndex, hero.id)
-
-    if (foundIndex >= 0) {
-        heroes[foundIndex] = hero;
-        localStorage.heroes = JSON.stringify(heroes);
-    }
+export async function updateHero(hero) {
+    const db = await openDB(dbName, dbVersion);
+    await db.put(heroesStoreName, hero);
 }
 
-export function deleteHero(heroId) {
-    let heroes;
-    if (localStorage.heroes === null) {
-        heroes = [];
-    } else {
-        heroes = JSON.parse(localStorage.heroes);
-    }
-
-    // Look for the hero to be deleted then remove it
-    const foundIndex = heroes.findIndex(h => h.id == heroId);
-
-    if (foundIndex >= 0) {
-        heroes.splice(foundIndex, 1);
-        localStorage.heroes = JSON.stringify(heroes);
-    }
+export async function deleteHero(heroId) {
+    const db = await openDB(dbName, dbVersion);
+    await db.delete(heroesStoreName, heroId);
 }

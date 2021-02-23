@@ -74,6 +74,7 @@ export async function handleSubmitHero(event) {
     console.log(hero);
     //ToDo: Make API call to add/update hero
     if (hero.id) {
+        hero.id = parseInt(hero.id)
         await heroRepository.updateHero(hero);
     } else {
         await heroRepository.addHero(hero);
@@ -86,7 +87,7 @@ export async function handleDeleteHero(id) {
     const confirmed = confirm(`Are you sure you want to delete hero #${id}?`);
     if (confirmed) {
         // Delete hero by Id from localStorage
-        heroRepository.deleteHero(id);
+        await heroRepository.deleteHero(id);
         document.querySelector(`#row-${id}`).remove();
     }
 }
