@@ -13,7 +13,6 @@
 	<script>
 
         let ninjaClickCount = 0;
-
 		function handleGenderChange(event) {
 			log(`Selected gender: ${event.target.value}`);
 		}
@@ -33,11 +32,17 @@
             let messagesDev = document.querySelector("#messages");
             messagesDev.innerHTML += `<br>${content}`;
         }
+
+		function changeColor() {
+			const elements = document.querySelectorAll(".example");
+			elements.forEach( e => e.style.backgroundColor = "lightYellow")
+		}
 	</script>
 </head>
 
 															   
 <body>
+	<p>Click Me!</p>
     <img id="happyNinjaImage" src="images/happy-ninja.png" onclick="handleImageClicked(event)"/>
     <br>
 	<label for="gender-select">Gender: </label>
@@ -46,6 +51,11 @@
 		<option value="female">Female</option>
 		<option value="alien">Alien</option>
 	</select>
+
+	<h2 class="example">A heading with class="example"</h2>
+	<p class="example">A paragraph with class="example".</p>
+	<p>Click the button to add a background color to all elements with class="example".</p>
+	<button onclick="changeColor()">Try it</button>
 
 	<div id="messages"></div>
 </body>
