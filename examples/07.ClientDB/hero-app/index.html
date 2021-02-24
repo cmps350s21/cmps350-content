@@ -10,6 +10,14 @@
     <nav>
         <a href="#" onclick="handleAddHero(event)">Add Hero</a>
     </nav>
+    <br>
+    <label for="heroTypeFilter">Hero Type</label>
+    <select id="heroTypeFilter" name="heroType" required>
+        <option></option>
+        <option value="Prophet">Prophet</option>
+        <option value="Companion">Companion</option>
+        <option value="Scholar">Scholar</option>
+    </select>
     <main id="heroes"></main>
     <div id="errorMsg"></div>
 </body>

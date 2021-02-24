@@ -2,7 +2,13 @@ import * as heroRepository from './hero-repository.js';
 
 //After the document is loaded in the browser
 document.addEventListener("DOMContentLoaded", async () => {
-    await handleInitPage();
+    await displayHeroes();
+
+    document.querySelector('#heroTypeFilter').addEventListener('change', async function() {
+        const heroType = this.value;
+        await displayHeroes(heroType);
+    });
+
     /*
        Because we set type='module' in <script type="module" src="./app.js"></script>
        Attach these functions to the window object to make
@@ -25,11 +31,16 @@ async function getHeroForm() {
  Functions to handle UI Events
  *****************************/
 //region UI Event Handlers
-async function handleInitPage() {
+async function displayHeroes(heroType) {
     try {
         log(''); // Clear any error message displayed on the screen
-        const heroes = await heroRepository.getHeroes();
-        console.log(heroes);
+        let heroes;
+        if (heroType) {
+            heroes = await heroRepository.getHeroesByType(heroType);
+        } else {
+            heroes = await heroRepository.getHeroes();
+        }
+        //console.log(heroes);
         const heroesDiv = document.querySelector("#heroes");
         heroesDiv.innerHTML = heroes2Html(heroes);
     } catch (e) {
