@@ -67,6 +67,7 @@ export async function addHero(hero) {
     const db = await getDB();
     // Returns the id assigned by the database
     const heroId = await db.add(heroesStoreName, hero);
+    console.log(heroId)
     return heroId;
 }
 
@@ -86,6 +87,7 @@ export async function getHeroesByType(heroType) {
     return await db.getAllFromIndex(heroesStoreName, 'heroTypeIndex', heroType);
 }
 
+//getHeroesById(2, 7)
 export async function getHeroesById(fromId, toId) {
     const db = await getDB();
     let range;
@@ -97,6 +99,7 @@ export async function getHeroesById(fromId, toId) {
         range = IDBKeyRange.upperBound(toId);  // key <= toId
 
     return await db.getAll(heroesStoreName, range);
+
 }
 
 /* Other
