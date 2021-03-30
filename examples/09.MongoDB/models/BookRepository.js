@@ -1,6 +1,6 @@
+import fs from 'fs-extra';
 import Store from './storeModel.js';
 import Book from './bookModel.js';
-import fs from 'fs-extra';
 
 class BookRepository {
     constructor() {
@@ -10,13 +10,13 @@ class BookRepository {
         return Store.create(newStore);
     }
 
-    async getStores() {
+    getStores() {
         //Returns js objects (instead of Mongoose objects)
-        return await Store.find({}).select('-__v').lean().exec();
+        return Store.find({}).select('-__v').lean();
     }
 
-    getStoresCount(aCity) {
-        return Store.countDocuments({ city : aCity});
+    getStoresCount(city) {
+        return Store.countDocuments({ city : city});
     }
 
     getBookCategories() {
@@ -71,7 +71,7 @@ class BookRepository {
         console.log('updateBook.updatedBook', updatedBook);
         const bookId = updatedBook._id;
         delete updatedBook._id; //Delete the _id if exists
-        return Book.update({_id: bookId}, updatedBook);
+        return Book.updateOne({_id: bookId}, updatedBook);
 
         /* Book.find({ category: 'Fun', pages : { $gt : 200 } })
         Book.find({}).sort('isbn').limit( 5 )
