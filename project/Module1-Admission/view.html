@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/headerFooterStyle.css">
+    <link rel="stylesheet" href="css/applicationsStylesheet.css">
+</head>
+<body>
+
+<header>
+    <img src="img\logo22.png" class="Himg" id="Himg"> <!-- add on click to Home page-->
+    <h1 class="Hh1">School Management System</h1>
+    <nav>
+        <a href="applications.html">Home</a>
+        <a href="index.html">Logout</a>
+    </nav>
+</header>
+
+<main>
+    <form id="viewForm" class="addForm">
+        <fieldset>
+            <legend class="appLegend">Application</legend>
+            <label for="firstName"> Student First Name:</label>
+            <input class="addForm" type="text" id="firstName" disabled >
+
+            <label for="lastName"> Student Last Name: </label>
+            <input class="addForm" type="text" id="lastName" disabled>
+
+            <label for="DoB"> Date Of Birth: </label>
+            <input class="addForm" type="text" id="DoB" disabled>
+
+            <label for="Gender">Gender:</label>
+            <input class="addForm" type="text" id="Gender" disabled>
+
+            <label for="CurrentSchoolGrade"> Current School Grade: </label>
+            <input class="addForm" type="text" id="CurrentSchoolGrade" disabled>
+
+            <label for="GradeApplyingFor"> Grade Applying For: </label>
+            <input class="addForm" type="text" id="GradeApplyingFor" disabled>
+
+            <label for="Resident">Is Resident?</label>
+            <input class="addForm" type="text" id="Resident" disabled>
+        </fieldset>
+    </form>
+</main>
+
+<footer>
+    <p class="CR">&copy; Copy Right reserved CMPS-350 Web App Development Project</p>
+    <div>
+        <i class="fa fa-fax footInfo  " aria-hidden="true"> +974 4433 2211</i>
+        <i class="fa fa-envelope footInfo " aria-hidden="true"> example@cmps350.com</i>
+    </div>
+</footer>
+<script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
+<script type="module" src="JS/viewApplication.js"></script>
+</body>
+</html>
+

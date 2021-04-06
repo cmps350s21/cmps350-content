@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admission Department New account</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/headerFooterStyle.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/newAccStyle.css">
+
+
+</head>
+<body>
+<header>
+    <img src="img\logo22.png" class="Himg" id="Himg">
+    <h1 class="Hh1">School Management System</h1>
+</header>
+
+<main>
+    <aside>
+        <img src="img\MGR.png" class="aSideimg">
+        <h3 class="aSideTitle"> Welcome from the Head of Admission Department</h3>
+        <p class="aSideMsg"> The admission department at XXXX international school would like to Lorem ipsum dolor sit
+            amet,
+            consectetur adipisicing elit. Cupiditate error est iste nisi officia perspiciatis praesentium soluta
+            sunt tempore vel. Aliquid, blanditiis doloribus eos id non perspiciatis repellat sapiente sit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam assumenda at beatae
+            consequatur
+            dolorum ducimus eius, eligendi error eum fuga officia perspiciatis quisquam quo sequi sit tenetur ullam
+            veniam voluptas voluptatibus. Aspernatur exercitationem harum id, ipsa ipsam itaque nesciunt nostrum
+            perspiciatis, quos repellendus repudiandae ullam vero vitae? Maxime, repudiandae.</p>
+
+        <p><b> Mr. Ahmed Abdullah </b></p>
+        <p> Head of Admission Department </p>
+    </aside>
+
+    <form>
+        <h1> Creating a New Account</h1>
+
+        <fieldset class="newAccFS" id="Container">
+            <p class="instruction">* Required Fields </p>
+            <legend class='Legend' id="Legend">Step 1: Father personal information</legend>
+
+            <label for="fname" class="inputL" id="fnameLabel">First Name*: </label>
+            <input type="text" id="fname" class="inputF" required>
+
+            <label for="lname" class="inputL" id="lnameLabel">Last Name*: </label>
+            <input type="text" id="lname" class="inputF" required>
+
+            <label for="NID" class="inputL" id="NIDLabel">National ID*: </label>
+            <input type="number" id="NID" class="inputF" required>
+
+            <label for="homePhone" class="inputL">Home Phone*: </label>
+            <input type="tel" id="homePhone" class="inputF" required>
+
+            <label for="mobile" class="inputL">Mobile*: </label>
+            <input type="tel" id="mobile" class="inputF" required>
+
+            <label for="email" class="inputL">E-mail*: </label>
+            <input type="email" id="email" class="inputF" required>
+
+            <label for="Occupation" class="inputL">Occupation*: </label>
+            <input type="text" id="Occupation" class="inputF" required>
+
+            <label for="nameofEmp" class="inputL">Name of Employer*: </label>
+            <input type="nameofEmp" id="nameofEmp" class="inputF" required>
+
+            <input type="submit" class="submitBtn" value="Next" id="submitBtn">
+
+        </fieldset>
+    </form>
+
+</main>
+
+<footer>
+    <p class="CR">&copy; Copy Right reserved CMPS-350 Web App Development Project</p>
+    <div>
+        <i class="fa fa-fax footInfo  " aria-hidden="true"> +974 4433 2211</i>
+        <i class="fa fa-envelope footInfo " aria-hidden="true"> example@cmps350.com</i>
+    </div>
+</footer>
+<script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
+<script type="module" src="js/addAccount.js"></script>
+</body>
+</html>

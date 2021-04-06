@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Applications</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/headerFooterStyle.css">
+    <link rel="stylesheet" href="css/applicationsStylesheet.css">
+</head>
+<body id="appBody">
+<header>
+    <img src="img\logo22.png" class="Himg" id="Himg"> <!-- add on click to Home page-->
+    <h1 class="Hh1">School Management System</h1>
+    <nav>
+        <a href="update.html">Update personal information</a>
+        <a href="index.html">Logout</a>
+    </nav>
+</header>
+<main>
+    <a href="add-application.html"><i class="fa fa-plus" aria-hidden="true"> Add Application</i></a>
+    <table id="applicationTable">
+        <thead>
+        <tr>
+            <td>Application Number</td>
+            <td>Application Year</td>
+            <td>Application Date</td>
+            <td>Application Status</td>
+            <td></td>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- inject here-->
+        </tbody>
+    </table>
+</main>
+<footer>
+    <p class="CR">&copy; Copy Right reserved CMPS-350 Web App Development Project</p>
+    <div>
+        <i class="fa fa-fax footInfo  " aria-hidden="true" > +974 4433 2211</i>
+        <i class="fa fa-envelope footInfo " aria-hidden="true" > example@cmps350.com</i>
+    </div>
+</footer>
+<script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
+<script type = 'module' src="js/applications.js"></script>
+</body>
+</html>

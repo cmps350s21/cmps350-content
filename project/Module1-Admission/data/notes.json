@@ -1,0 +1,44 @@
+[
+  {
+    "note": "1232",
+    "applicationId": "2",
+    "visible": false,
+    "writtenBy": "admin",
+    "id": 1
+  },
+  {
+  "note": "note 1 app 1 user test1",
+    "applicationId": "1",
+    "visible": true,
+    "writtenBy": "user",
+    "id": 2
+  },
+  {
+  "note": "note 2 app 1 user test1",
+    "applicationId": "1",
+    "visible": true,
+    "writtenBy": "user",
+    "id": 3
+  },
+  {
+    "note": "testing from user 3",
+    "applicationId": "5",
+    "visible": true,
+    "writtenBy": "user",
+    "id": 4
+  },
+  {
+    "note": "notes for the future",
+    "applicationId": "6",
+    "visible": true,
+    "writtenBy": "user",
+    "id": 5
+  },
+  {"note": "note by admin not visible to user",
+    "applicationId": "2",
+    "visible": false,
+    "writtenBy": "admin",
+    "id": 6
+  }
+
+]

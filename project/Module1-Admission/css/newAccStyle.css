@@ -1,0 +1,76 @@
+main{
+    display: grid;
+    /*background: red;*/
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "aSide Form";
+    align-items: stretch;
+}
+
+aside{
+    grid-area: aSide;
+    background: #CEA053;
+    padding: 10px;
+}
+
+.aSideimg{
+    display: block;
+    max-height: 30%;
+    margin: auto auto 20px auto;
+}
+
+.aSideTitle{
+    text-align: center;
+    margin: 10px;
+
+}
+
+.aSideMsg{
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+main>form>h1{
+    margin-bottom: 30px;
+}
+.Legend{
+    margin-bottom: 10px;
+}
+
+form{
+    grid-area: Form;
+    /*display: flex;*/
+    background: gray;
+    justify-self: stretch;
+    height: auto !important;
+    width: auto !important;
+    background: white;
+    margin: 20px 40px 0px 40px;
+}
+
+.newAccFS{
+    padding-right: 30px;
+}
+
+.instruction{
+    flex-basis: 100%;
+    padding: 0px 0px 5px 10px;
+    font-size: 0.8em;
+    color: darkred;
+}
+
+.submitBtn{
+    flex-basis: 100% ;
+   /*margin: auto;*/
+}
+
+.focus{
+    background: yellow;
+    color: darkred;
+    font-size: 1.2em;
+}
+#updateMain{
+    display: flex;
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1rem;
+}

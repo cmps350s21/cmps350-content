@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admission Login</title>
+    <link rel="icon" href="img\logo1.png">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/headerFooterStyle.css">
+</head>
+<body>
+<header>
+    <img src="img\logo22.png" class="Himg" id="Himg"> <!--add on click to Home page-->
+    <h1 class="Hh1">Admission Department Login</h1>
+</header>
+
+<main>
+    <form>
+        <fieldset>
+            <legend class ='Legend'> </legend>
+
+            <label for="userName" class="inputL">User Name: </label>
+            <input type="text" id="userName" class="inputF"  placeholder="Enter your User name" required>
+
+            <label for="password" class="inputL">Password: </label>
+            <input type="password" id="password" class="inputF"  placeholder="Enter your Password" required>
+
+            <a href="" class="forgetP" id = "FMP">Forget your password?</a> <!-- make aletr by js-->
+            <input type="submit" class="submitBtn" value="Login" id="submitBtn">
+        </fieldset>
+        <a href="newAccount.html" class="Newacc">Create a new account</a>
+    </form>
+
+</main>
+
+
+<footer>
+    <p class="CR">&copy; Copy Right reserved CMPS-350 Web App Development Project</p>
+    <div>
+        <i class="fa fa-fax footInfo  " aria-hidden="true" > +974 4433 2211</i>
+        <i class="fa fa-envelope footInfo " aria-hidden="true" > example@cmps350.com</i>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
+<script type="module" src="js/LoginJS.js"></script>
+</body>
+</html>

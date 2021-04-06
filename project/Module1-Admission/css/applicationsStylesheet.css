@@ -1,0 +1,135 @@
+/*header>nav{*/
+/*    margin-top: 1rem;*/
+/*    width: 25%;*/
+/*    height: 25%;*/
+/*    display: flex;*/
+/*    justify-content: space-evenly;*/
+/*}*/
+/*header>nav>a{*/
+/*    color:white;*/
+/*    text-decoration: none;*/
+/*}*/
+/*a:hover{*/
+/*    text-decoration: underline;*/
+/*    font-size: 1.1rem;*/
+/*}*/
+
+main a{
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+}
+main{
+    display: table;
+    margin: 2rem auto;
+    padding: 2rem;
+    width: 90%;
+    font-size: 1rem;
+}
+#applicationTable{
+    margin:1rem 0px 0px 0px;;
+    border-collapse: collapse;
+    width: 100%;
+}
+#applicationTable>thead{
+    background-color: #01213C;
+    color: white;
+}
+td {
+    padding: 10px;
+    text-align: center;
+}
+.eventColumn>button{
+
+}
+.eventColumn>button:hover{
+    cursor: pointer;
+}
+#applicationTable>tbody>tr:nth-child(even){
+    background-color: lightcyan;
+}
+#applicationTable>tbody>tr:nth-child(odd){
+    background-color: lightyellow;
+}
+/*Add Applications*/
+.addForm > fieldset{
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: [labels] auto [input] 1fr [labels] auto [input] 1fr;
+    grid-gap: 1rem;
+    grid-column-gap: 1rem;
+}
+.appLegend{
+    grid-column: 1/5;
+}
+#submit{
+    width: 15%;
+    height: 25px;
+    margin: 1rem auto;
+    grid-column: 1/5;
+    background: #01213C;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+/*main>select{*/
+/*    margin: 0 0 2rem 1rem;*/
+/*}*/
+.viewForm > fieldset{
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: [labels] auto [input] 1fr [labels] auto [input] 1fr;
+    grid-gap: 1rem;
+    grid-column-gap: 1rem;
+}
+
+.selectClass{
+    margin-right:30%;
+}
+
+label{
+    font-size: 1.3em;
+}
+.SetYearDiv{
+    margin-left: 35%;
+    margin-bottom: 2em;
+}
+.SetYearDivP{
+    margin-left: 25%;;
+}
+.LINKED:hover {
+    background: #f2f3ff !important ;
+    /*outline: none;*/
+    color: red;
+    cursor: pointer;
+}
+
+.redRow{
+    border: 1px solid black;
+}
+.XX{
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+#AdminBtn{
+    display: flex;
+    width: 30%;
+    margin:1rem auto;
+    justify-content: space-around
+}
+#AdminBtn>button{
+    background: #01213C;
+    color:white;
+    border: none;
+    width: 30%;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 0.5rem;
+
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>view</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/headerFooterStyle.css">
+    <link rel="stylesheet" href="css/principalView.css">
+    <link rel="stylesheet" href="css/noteAttachment.css">
+    <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="css/applicationsStylesheet.css">
+
+
+</head>
+<body>
+<header>
+    <img src="img\logo22.png" class="Himg" id="Himg"> <!-- add on click to Home page-->
+    <h1 class="Hh1">School Management System</h1>
+    <nav>
+        <a href="principal.html">Home</a>
+        <a href="index.html">Logout</a>
+    </nav>
+</header>
+
+<main>
+    <div class="tab">
+        <button class="tablinks" id="SIBTN" onclick="opentab(event, 'StudentsInformation')" >Students Information</button>
+        <button class="tablinks" onclick="opentab(event, 'ParentsInformation')">Parents Information</button>
+        <button class="tablinks" onclick="opentab(event, 'Notes')">Notes</button>
+        <button class="tablinks" onclick="opentab(event, 'Attachments')">Attachments</button>
+        <button class="tablinks" onclick="opentab(event, 'Tests')">Tests</button>
+    </div>
+    <div id="StudentsInformation" class="tabcontent">
+        <form id="viewForm" class="addForm">
+            <fieldset>
+                <label for="Status">Status:</label>
+                <select id="Status" class="selectClass">
+                    <option selected disabled>Select Status</option>
+                    <option value="Pending">Pending</option>
+                    <option value="Accepted">Accepted</option>
+                    <option value="Rejected">Rejected</option>
+                    <option value="Waitinglist">Waiting List</option>
+                </select>
+                <legend class="appLegend">Application</legend>
+                <label for="firstName"> Student First Name:</label>
+                <input class="addForm" type="text" id="firstName" name="FirstName" disabled>
+
+                <label for="lastName"> Student Last Name: </label>
+                <input class="addForm" type="text" id="lastName" name="LastName" disabled>
+
+                <label for="DoB"> Date Of Birth: </label>
+                <input class="addForm" type="text" id="DoB" name="DateOfBirth" disabled>
+
+                <label for="Gender">Gender:</label>
+                <input class="addForm" type="text" id="Gender" name="Gender" disabled>
+
+                <label for="CurrentSchoolGrade"> Current School Grade: </label>
+                <input class="addForm" type="text" id="CurrentSchoolGrade" name="CurrentSchoolGrade" disabled>
+
+                <label for="GradeApplyingFor"> Grade Applying For: </label>
+                <input class="addForm" type="text" id="GradeApplyingFor" name="GradeApplyingFor" disabled>
+
+                <label for="Resident">Is Resident?</label>
+                <input class="addForm" type="text" id="Resident" name="Resident" disabled>
+
+                <label for="Status">Status:</label>
+                <input class="addForm" type="text" id="StatusTXT" name="Status" disabled>
+
+                <label for="AY">Academic Year of application :</label>
+                <input class="addForm" type="text" id="AY" name="AY" disabled>
+
+                <label >Application ID:</label>
+                <input class="addForm" type="text" id="ID" name="ID" disabled>
+            </fieldset>
+        </form>
+    </div>
+
+    <div id="ParentsInformation" class="tabcontent">
+        <form id="parentsInfo" class="addForm" >
+            <fieldset class="newAccFS">
+                <legend class='Legend appLegend' >Credentials</legend>
+
+                <label class="inputL">User Name: </label>
+                <input type="text" class="inputF" name="UserName" disabled>
+            </fieldset>
+
+            <fieldset class="newAccFS">
+                <legend class='Legend appLegend' >Father personal information</legend>
+
+                <label class="inputL">First Name: </label>
+                <input type="text" class="inputF" name="FatherFirstName" disabled>
+
+                <label class="inputL">Last Name: </label>
+                <input type="text" class="inputF" name="FatherLastName" disabled>
+
+                <label class="inputL">National ID: </label>
+                <input type="number" class="inputF" name="FatherNationalID" disabled>
+
+                <label class="inputL">Home Phone: </label>
+                <input type="tel" class="inputF" name="FatherHomePhone" disabled>
+
+                <label class="inputL">Mobile: </label>
+                <input type="tel" class="inputF" name="FatherMobile" disabled>
+
+                <label class="inputL">E-mail: </label>
+                <input type="email" class="inputF" name="FatherEmail" disabled>
+
+                <label class="inputL">Occupation: </label>
+                <input type="text" class="inputF" name="FatherOccupation" disabled>
+
+                <label class="inputL">Name of Employer: </label>
+                <input type="nameofEmp" class="inputF" name="FatherNameofEmployer" disabled>
+            </fieldset>
+            <fieldset class="newAccFS">
+                <legend class='Legend appLegend' >Mother personal information</legend>
+
+                <label class="inputL">First Name: </label>
+                <input type="text" class="inputF" name="MotherFirstName" disabled>
+
+                <label class="inputL">Last Name: </label>
+                <input type="text" class="inputF" name="MotherLastName" disabled>
+
+                <label class="inputL">National ID: </label>
+                <input type="number" class="inputF" name="MotherNationalID" disabled>
+
+                <label class="inputL">Home Phone: </label>
+                <input type="tel" class="inputF" name="MotherHomePhone" disabled>
+
+                <label class="inputL">Mobile: </label>
+                <input type="tel" class="inputF" name="MotherMobile" disabled>
+
+                <label class="inputL">E-mail: </label>
+                <input type="email" class="inputF" name="MotherEmail" disabled>
+
+                <label class="inputL">Occupation: </label>
+                <input type="text" class="inputF" name="MotherOccupation" disabled>
+
+                <label class="inputL">Name of Employer: </label>
+                <input type="nameofEmp" class="inputF" name="MotherNameofEmployer" disabled>
+            </fieldset>
+        </form>
+    </div>
+
+    <div id="Notes" class="tabcontent">
+        <label for="note">Note:</label><br>
+        <textarea name="note" id="note" cols="100" rows="5"></textarea>
+        <br>
+        <input type="checkbox" id ="visible">visible to parents</input>
+        <button id="addNote" class="addBTN">Add Note</button>
+        <table id="noteList">
+        </table>
+    </div>
+
+    <div id="Attachments" class="tabcontent">
+        <h1>Attachments</h1>
+        <input type="file" id="attachmentInput">
+        <button id="addAttachment" class="addBTN">Add</button>
+        <table id="attachmentsList">
+        </table>
+    </div>
+
+    <div id="Tests" class="tabcontent">
+        <form id="testApp" class="addForm" >
+            <fieldset class="newAccFS">
+                <legend class='appLegend' >Test Application</legend>
+
+                <label for="subject">Subject:</label>
+                <input class="addForm" type="text" id="subject" required>
+
+                <label for="testDate">Test Date:</label>
+                <input class="addForm" type="date" id="testDate" required>
+
+                <label for="Result">Test Result:</label>
+                <input class="addForm" type="number" id="Result" >
+
+                <label for="comment">Comment:</label>
+                <input class="addForm" type="text" id="comment">
+                <button class="addBTN" id="addTest">Add Test</button>
+            </fieldset>
+        </form>
+        <table id="testList">
+            <thead>
+            <tr>
+                <td>
+                    Test Number
+                </td>
+                <td>
+                    Test Subject
+                </td>
+                <td>
+                    Test Date
+                </td>
+                <td>
+                    Test Result
+                </td>
+                <td>
+                    Comments
+                </td>
+                <td>
+
+                </td>
+            </tr>
+            </thead>
+            <tbody id="testBody">
+
+            </tbody>
+        </table>
+    </div>
+
+</main>
+
+<footer>
+    <p class="CR">&copy; Copy Right reserved CMPS-350 Web App Development Project</p>
+    <div>
+        <i class="fa fa-fax footInfo  " aria-hidden="true"> +974 4433 2211</i>
+        <i class="fa fa-envelope footInfo " aria-hidden="true"> example@cmps350.com</i>
+    </div>
+</footer>
+<script type="module" src="js/test.js"></script>
+<script type="module" src="JS/principalView.js"></script>
+</body>
+</html>

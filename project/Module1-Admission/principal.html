@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Principal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/headerFooterStyle.css">
+    <link rel="stylesheet" href="css/applicationsStylesheet.css">
+</head>
+<body>
+<header>
+    <img src="img\logo22.png" class="Himg" id="Himg"> <!-- add on click to Home page-->
+    <h1 class="Hh1">School Management System</h1>
+    <nav>
+        <a href="./statics%20.html">Statistics</a>
+        <a href="index.html">Logout</a>
+    </nav>
+</header>
+<main>
+    <div class="SetYearDiv">
+        <label for="SetacademicYear1">Current  Academic Year: </label>
+        <input id="SetacademicYear1" type="number" placeholder="YYYY" min="2000" max="2100">
+        <label for="SetacademicYear2"> - </label>
+        <input id="SetacademicYear2" type="number" placeholder="YYYY" min="2000" max="2100">
+    </div>
+
+    <label for="Status">Filter By Status:</label>
+    <select id="Status" class="selectClass">
+        <option value="all"  selected disabled>Select a Status</option>
+        <option value="all" >All</option>
+        <option value="Pending">Pending</option>
+        <option value="Accepted">Accepted</option>
+        <option value="Rejected">Rejected</option>
+        <option value="Withdrawn">Withdrawn</option>
+        <option value="Waitinglist">Waiting List</option>
+        <option value="Submitted">Submitted</option>
+    </select>
+
+
+        <label for="SacademicYear" class="SetYearDivP">Filter By Academic Year : </label>
+        <input id="SacademicYear" type="number" placeholder="YYYY" min="2000" max="2100">
+        <label for="EacademicYear"> - </label>
+        <input id="EacademicYear" type="number" placeholder="YYYY" min="2000" max="2100">
+
+
+    <table id="applicationTable">
+        <thead>
+        <tr>
+            <td>Application Number</td>
+            <td>Applicant User Name</td>
+            <td>Application Year</td>
+            <td>Application Date</td>
+            <td>Applicant First Name</td>
+            <td>Application Status</td>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- inject here-->
+        </tbody>
+    </table>
+</main>
+<footer>
+    <p class="CR">&copy; Copy Right reserved CMPS-350 Web App Development Project</p>
+    <div>
+        <i class="fa fa-fax footInfo  " aria-hidden="true"> +974 4433 2211</i>
+        <i class="fa fa-envelope footInfo " aria-hidden="true"> example@cmps350.com</i>
+    </div>
+</footer>
+
+<script  type="module" src="js/principal.js"></script>
+</body>
+</html>

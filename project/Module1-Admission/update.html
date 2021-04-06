@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/applicationsStylesheet.css">
+    <link rel="stylesheet" href="css/headerFooterStyle.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/newAccStyle.css">
+
+</head>
+<body>
+<header>
+    <img src="img\logo22.png" class="Himg" id="Himg">
+    <h1 class="Hh1">School Management System</h1>
+    <nav>
+        <a href="./applications.html" >Home</a>
+        <a href="index.html">Logout</a>
+    </nav>
+</header>
+<main id="updateMain">
+    <form>
+        <h1>Personal information</h1>
+
+        <fieldset class="newAccFS" id="Container">
+            <p class="instruction">* Required Fields </p>
+            <legend class='Legend' id="Legend">Step 1: Father personal information</legend>
+
+            <label for="fname" class="inputL" id="fnameLabel">First Name*: </label>
+            <input type="text" id="fname" class="inputF" required>
+
+            <label for="lname" class="inputL" id="lnameLabel">Last Name*: </label>
+            <input type="text" id="lname" class="inputF" required>
+
+            <label for="NID" class="inputL" id="NIDLabel">National ID*: </label>
+            <input type="number" id="NID" class="inputF" required>
+
+            <label for="homePhone" class="inputL">Home Phone*: </label>
+            <input type="tel" id="homePhone" class="inputF" required>
+
+            <label for="mobile" class="inputL">Mobile*: </label>
+            <input type="tel" id="mobile" class="inputF" required>
+
+            <label for="email" class="inputL">E-mail*: </label>
+            <input type="email" id="email" class="inputF" required>
+
+            <label for="Occupation" class="inputL">Occupation*: </label>
+            <input type="text" id="Occupation" class="inputF" required>
+
+            <label for="nameofEmp" class="inputL">Name of Employer*: </label>
+            <input type="nameofEmp" id="nameofEmp" class="inputF" required>
+
+            <input type="submit" class="submitBtn" value="Next" id="submitBtn">
+
+        </fieldset>
+    </form>
+</main>
+<footer>
+    <p class="CR">&copy; Copy Right reserved CMPS-350 Web App Development Project</p>
+    <div>
+        <i class="fa fa-fax footInfo  " aria-hidden="true"> +974 4433 2211</i>
+        <i class="fa fa-envelope footInfo " aria-hidden="true"> example@cmps350.com</i>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
+<script type="module" src="js/updateAccount.js"></script>
+
+</body>
+</html>

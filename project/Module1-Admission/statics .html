@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Statics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/headerFooterStyle.css">
+    <link rel="stylesheet" href="css/applicationsStylesheet.css">
+</head>
+<body>
+<header>
+    <img src="img\logo22.png" class="Himg" id="Himg"> <!--add on click to Home page-->
+    <h1 class="Hh1">Admission Department Login</h1>
+    <nav>
+        <a href="./principal.html">Home</a>
+        <a href="index.html">Logout</a>
+    </nav>
+</header>
+<main>
+    <div class="SetYearDiv">
+        <label for="AY1">Filter By Academic Year: </label>
+        <input id="AY1" type="number" placeholder="YYYY" min="2000" max="2100">
+        <label for="AY2"> - </label>
+        <input id="AY2" type="number" placeholder="YYYY" min="2000" max="2100">
+    </div>
+
+    <table id="applicationTable">
+<!--        <thead>-->
+<!--        <tr>-->
+<!--            <td>Grade</td>-->
+<!--            <td>Category</td>-->
+<!--            <td>2019-2020</td>-->
+<!--            <td>2020-2021</td>-->
+<!--            <td>2021-2022</td>-->
+<!--        </tr>-->
+<!--        </thead>-->
+<!--        <tbody>-->
+<!--        &lt;!&ndash; inject here&ndash;&gt;-->
+<!--        <tr>-->
+<!--            <td rowspan="5">Grade 1</td>-->
+<!--            <td>Pending</td>-->
+<!--            <td>${}</td>-->
+<!--            <td>${}</td>-->
+<!--            <td>${}</td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>Accepted</td>-->
+<!--            <td>${}</td>-->
+<!--            <td>${}</td>-->
+<!--            <td>${}</td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>Rejected</td>-->
+<!--            <td>${}</td>-->
+<!--            <td>${}</td>-->
+<!--            <td>${}</td>-->
+
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>Withdrawn</td>-->
+<!--            <td>${}</td>-->
+<!--            <td>${}</td>-->
+<!--            <td>${}</td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>Waiting List</td>-->
+<!--            <td>${}</td>-->
+<!--            <td>${}</td>-->
+<!--            <td>${}</td>-->
+<!--        </tr>-->
+
+<!--        </tbody>-->
+    </table>
+
+
+</main>
+
+<footer>
+    <p class="CR">&copy; Copy Right reserved CMPS-350 Web App Development Project</p>
+    <div>
+        <i class="fa fa-fax footInfo  " aria-hidden="true" > +974 4433 2211</i>
+        <i class="fa fa-envelope footInfo " aria-hidden="true" > example@cmps350.com</i>
+    </div>
+</footer>
+
+<script type="module" src="js/Statistics.js"></script>
+</body>
+</html>

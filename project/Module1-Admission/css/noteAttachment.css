@@ -1,0 +1,45 @@
+main {
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+h1{
+    margin: 1rem 0;
+}
+.addBTN{
+    margin: 1rem;
+    padding: 0.5rem;
+    /*width: 7.5%;*/
+    background: #01213C;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#noteList{
+    width: 90%;
+    margin: 1rem auto;
+}
+#noteList tr:nth-child(even){
+    background-color: #D9E1F2;
+}
+#noteList tr:nth-child(odd){
+    background-color: #FFFFFF;
+}
+img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+table>thead{
+    background-color: #01213C;
+    color: white;
+}
+td {
+    padding: 10px;
+    text-align: center;
+}

@@ -1,0 +1,26 @@
+main{
+    margin: 1rem auto;
+    width:90%;
+    display: flex;
+    font-size: 1.2rem;
+}
+table{
+    align-self: flex-start;
+    width: 95%;
+    margin: 1rem auto;
+    border-collapse: collapse;
+}
+#testList>thead{
+    background: #01213C;
+    color: white;
+}
+td {
+    padding: 10px;
+    text-align: center;
+}
+#testList>tbody>tr:nth-child(even){
+    background: lightcyan;
+}
+#testList>tbody>tr:nth-child(odd){
+    background: lightyellow;
+}
