@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report Incident</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/report.css">
+</head>
+<body>
+<header>
+    <h1>Report Incident</h1>
+    <hr>
+</header>
+<main>
+    <form action="" class="reportForm">
+        <h2>Students Involved</h2>
+        <div class="studentDetails">
+            <div class="selectId">
+                <label for="id">Enter Student ID:</label>
+                <input type="number" id="id" name="id" min="1" max="5">
+                <i class="fa fa-plus" id="addbtn" onclick="addStudent()"></i>
+            </div>
+            <div class="generatedStudent">
+
+            </div>
+        </div>
+        <h2>Incident Details</h2>
+        <div class="incidentDetails">
+            <div id="typeDetails">
+                <label for="type">Incident Type:</label>
+                <select name="type" id="type">
+
+                </select>
+            </div>
+            <div id="locationDetails">
+                <label for="location">Location:</label>
+                <select name="location" id="location">
+
+                </select>
+            </div>
+            <div id="dateDetails">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <div id="timeDetails">
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" value="07:00">
+            </div>
+        </div>
+        <h2>Teachers Involved</h2>
+        <div class="teacherDetails">
+            <div>
+                <label for="teacher">Teachers involved:</label>
+                <br>
+                <select name="teacher" id="teacher" multiple size="6">
+
+                </select>
+            </div>
+            <div>
+                <label for="remarks">Incident Details:</label>
+                <br>
+                <textarea name="remarks" id="remarks" cols="94" rows="5"></textarea>
+            </div>
+        </div>
+        <input id="buttons" type="submit" id="submit">
+    </form>
+</main>
+<script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
+<script type="module" src="js/report.js"></script>
+</body>
+</html>

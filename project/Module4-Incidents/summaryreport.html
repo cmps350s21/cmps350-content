@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Incidents Summary Report</title>
+    <link rel="stylesheet" href="css/getIncident.css">
+    <link rel="stylesheet" href="css/summaryReport.css">
+</head>
+<body>
+<header>
+    <h1>Incidents Summary Report</h1>
+</header>
+<main>
+    <form action="" class="filterForm">
+        <div id="start-date">
+            <label for="fromDate">From Date:</label>
+            <input type="date" id="fromDate" name="fromDate">
+        </div>
+        <div id="end-date">
+            <label for="toDate">To Date:</label>
+            <input type="date" id="toDate" name="toDate">
+        </div>
+        <div>
+            <label for="grade-options">Grade level:</label>
+            <select name="grade-options" id="grade-options">
+                <option value="0">All</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+        </div>
+        <input type="submit" id="submitFilters">
+    </form>
+    <table class="summaryDetails">
+        <thead>
+        <tr>
+            <th>Incident Type</th>
+            <th>Count</th>
+        </tr>
+        </thead>
+        <tbody class="summaryTable">
+        <tr>
+            <td>Damaging school property</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Cheating</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Bullying</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Threat of physical violence</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Actual physical violence</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Other</td>
+            <td></td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+<script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
+<script type="module" src="js/summaryReport.js"></script>
+</body>
+</html>

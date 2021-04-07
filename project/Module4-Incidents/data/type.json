@@ -1,0 +1,26 @@
+[
+  {
+    "index": "0",
+    "name": "Damaging school property"
+  },
+  {
+    "index": "1",
+    "name": "Cheating"
+  },
+  {
+    "index": "2",
+    "name": "Bullying"
+  },
+  {
+    "index": "3",
+    "name": "Threat of physical violence"
+  },
+  {
+    "index": "4",
+    "name": "Actual physical violence"
+  },
+  {
+    "index": "5",
+    "name": "Other"
+  }
+]

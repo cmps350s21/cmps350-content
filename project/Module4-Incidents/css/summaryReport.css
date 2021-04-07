@@ -1,0 +1,30 @@
+body {
+    font-size: 13pt;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    color: #313638;
+    gap: 20px;
+    width: 100%;
+}
+
+.filterForm {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    gap: 5px;
+    margin-left: 7.5%;
+}
+
+.summaryDetails {
+    align-self: center;
+}
+
+#submitFilters {
+    width: 60px;
+    height: 28px;
+    background-color: #313638;
+    color: #FFFFFF;
+}

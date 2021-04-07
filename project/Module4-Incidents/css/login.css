@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #313638;
+    color: #FFFFFF;
+}
+
+hr {
+    width: 300px;
+}
+
+.loginForm {
+    width: 400px;
+    border: 1px solid #FFFFFF;
+    background-color: #1481BA;
+
+}
+
+#loginBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 50px;
+    gap: 20px;
+}
+
+input {
+    height: 50px;
+}
+
+input[type="submit"] {
+    background-color: #313638;
+    color: #FFFFFF;
+    font-size: 12pt;
+}

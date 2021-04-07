@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+h1 {
+    color: #313638;
+}
+
+.reportForm, .updateForm {
+    width: 700px;
+    background-color: #1481BA;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 13pt;
+}
+
+.selectId {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.selectId input {
+    width: 80px;
+    height: 25px;
+}
+
+.generatedStudent {
+    background-color: #313638;
+}
+
+.involvedStudent {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+#idBox, #gradeBox {
+    width: 50px;
+    margin: 10px;
+}
+
+#nameBox {
+    width: 200px;
+    margin: 10px;
+}
+
+i {
+    align-self: center;
+}
+
+.incidentDetails {
+    background-color: #313638;
+    display: flex;
+    gap: 28px;
+    padding: 10px;
+}
+
+.incidentDetails select {
+    height: 25px;
+}
+
+.teacherDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.teacherDetails div select {
+    width: 200px;
+    font-size: 11pt;
+}
+
+#buttons {
+    width: 60px;
+    height: 28px;
+    margin-top: 10px;
+    background-color: #313638;
+    color: #FFFFFF;
+}

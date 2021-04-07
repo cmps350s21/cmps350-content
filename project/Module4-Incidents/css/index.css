@@ -1,0 +1,20 @@
+body {
+    background-color: #FFFFFF;
+    text-align: center;
+    color: #313638;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #1481BA;
+    font-size: 13pt;
+}
+
+a {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #FFFFFF;
+}

@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    color: #313638;
+}
+
+main {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+table {
+    width: 85%;
+    font-size: 12.5pt;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #313638;
+    color: #FFFFFF;
+}
+
+tbody {
+    font-weight: bold;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #1481BA;
+    color: #FFFFFF;
+}
+
+tbody tr:nth-of-type(odd) {
+    background-color: #FFFFFF;
+    color: #313638;
+
+}
+
+tbody td:last-child {
+    text-align: center;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+button {
+    width: 33px;
+    height: 28px;
+    gap: 5px;
+    margin: 2.5px 0px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+#noteArea {
+    width: 100%;
+}
+
+.filterArea {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 85%;
+}
+
+#filtering {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#search {
+    align-self: center;
+}
+
+#filter-search {
+    width: 60px;
+    align-self: flex-end;
+    background-color: #313638;
+    color: #FFFFFF;
+}
+
+#end-date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pop input[type='submit'], #removeImg {
+    width: 60px;
+    height: 28px;
+    margin-top: 10px;
+    background-color: #313638;
+    color: #FFFFFF;
+}

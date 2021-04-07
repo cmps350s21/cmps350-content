@@ -1,0 +1,28 @@
+.pop {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: 100px;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.content {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    border: 1px solid;
+    width: 30%;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 10px;
+    font-size: 28px;
+}

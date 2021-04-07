@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Incidents</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/getIncident.css">
+</head>
+<body>
+<header>
+    <h1>Incidents</h1>
+</header>
+<main>
+    <table class="incidents-table" id="incidents-table">
+        <thead>
+        <tr>
+            <th id="id-head">Incident ID</th>
+            <th id="student-head">Students Involved</th>
+            <th id="itype-head">Incident Type</th>
+            <th id="date-head" class="date-head">Incident Date</th>
+            <th id="time-head">Time</th>
+            <th id="location-head">Location</th>
+            <th id="action-head"> Actions</th>
+        </tr>
+        </thead>
+        <tbody class="incidentReports">
+
+        </tbody>
+    </table>
+    <div class="filterArea">
+        <div id="filtering">
+            <div id="start-date">
+                <label for="startdate">From Date:</label>
+                <input type="date" id="startdate" name="startdate">
+            </div>
+            <div id="end-date">
+                <label for="enddate">To Date:</label>
+                <input type="date" id="enddate" name="enddate">
+            </div>
+            <button type='submit' id="filter-search"> Filter</button>
+        </div>
+        <div id="search">
+            <input type="text" id="search-bar" placeholder="Search">
+        </div>
+    </div>
+</main>
+<div class="pop" id="attachContainer">
+    <div class="content">
+        <span class="closeBtn" onclick="closeAttachment()">&times;</span>
+        <form action="" class="attachForm">
+            <label for="attachment"> Add Attachment: </label><br>
+            <input type="file" id="attachment">
+            <div>
+                <img id="attachedImage" alt="">
+            </div>
+            <input type="submit" id="submit">
+            <button type="button" id="removeImg" onclick="deleteAttach()">Delete</button>
+        </form>
+    </div>
+</div>
+
+<div class="pop" id="noteContainer">
+    <div class="content">
+        <span class="closeBtn" onclick="closeNote()">&times;</span>
+        <form action="" class="noteForm">
+            <label for="noteArea">Incident Notes: </label>
+            <br>
+            <textarea id="noteArea" rows="4" cols="50" name="noteArea"></textarea>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+<div class="pop" id="penaltyContainer">
+    <div class="content">
+        <span class="closeBtn" onclick="closePenalty()">&times;</span>
+        <form action="" class="penaltyForm">
+            <label for="penaltySelect">Add Penalty: </label>
+            <select name="penaltySelect" id="penaltySelect">
+                <option value="0" id="Verbal warning">Verbal warning</option>
+                <option value="1" id="Written warning">Written warning</option>
+                <option value="2" id="Fine">Fine</option>
+                <option value="3" id="Detention">Detention</option>
+                <option value="4" id="Suspension">Suspension</option>
+            </select>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+<script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
+<script type="module" src="js/getIncident.js"></script>
+</body>
+</html>
+
+

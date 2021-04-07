@@ -1,0 +1,50 @@
+[
+  {
+    "index": "0",
+    "name": "Classroom"
+  },
+  {
+    "index": "1",
+    "name": "Bus"
+  },
+  {
+    "index": "2",
+    "name": "Office"
+  },
+  {
+    "index": "3",
+    "name": "Gym"
+  },
+  {
+    "index": "4",
+    "name": "Restroom"
+  },
+  {
+    "index": "5",
+    "name": "Hallway"
+  },
+  {
+    "index": "6",
+    "name": "Cafeteria"
+  },
+  {
+    "index": "7",
+    "name": "Stairway"
+  },
+  {
+    "index": "8",
+    "name": "Parking lot"
+  },
+  {
+    "index": "9",
+    "name": "Playground"
+  },
+  {
+    "index": "10",
+    "name": "Other: on school grounds"
+  },
+  {
+    "index": "11",
+    "name": "Other: off school grounds"
+  }
+]

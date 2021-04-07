@@ -1,0 +1,22 @@
+[
+  {
+    "username": "staff1",
+    "password": "staff1"
+  },
+  {
+    "username": "parent1",
+    "password": "parent1",
+    "children": [
+      {
+        "name": "Alex Jacobs",
+        "id": 1,
+        "grade": 4
+      },
+      {
+        "name": "Mandy Franz",
+        "id": "3",
+        "grade": 5
+      }
+    ]
+  }
+]
