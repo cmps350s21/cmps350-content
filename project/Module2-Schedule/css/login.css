@@ -1,0 +1,65 @@
+*{
+    background-color: whitesmoke;
+    /*margin-top: 1.5rem;*/
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: "Segoe UI";
+
+}
+#image{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: 7px;
+    background-color: darkslategray;
+}
+header,h1{
+    margin-top: 0;
+    width: 100%;
+    background-color: darkslategray;
+    color: white;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 40px;
+    margin-bottom: 1em;
+
+}
+.container input{
+    align-items: center;
+    color: darkslategray;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border-color: darkslategray;
+    width: 30%;
+}
+.form-element{
+    color: darkslategray;
+    font-size: 16px;
+    font-weight: bold;
+}
+#login{
+    background-color: darkcyan;
+    margin-top: 1em;
+    alignment: center;
+    font-size: 18px;
+    width: 15%;
+    color: white;
+}
+
+@media screen and (max-width: 600px){
+    .container input{
+        width: 80%;
+    }
+}
+#portalHeader{
+    font-size: 40px;
+    color: darkslategray;
+
+}
+hr{
+    width: 70%;
+    color: darkslategray;
+}

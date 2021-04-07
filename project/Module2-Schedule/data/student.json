@@ -1,0 +1,73 @@
+[
+  {
+    "studentID": "sa0512",
+    "studentName": "Samar Ali",
+    "currentGrade": 11,
+    "yearOfGrade": 2021,
+    "parentID": "al2200",
+    "sectionName": "F-11"
+  },{
+  "studentID": "sa0513",
+  "studentName": "Sarah Ali",
+  "currentGrade": 12,
+  "yearOfGrade": 2021,
+  "parentID": "al2200",
+  "sectionName": " "
+},
+  {
+    "studentID": "an3322",
+    "studentName": "amani nader",
+    "currentGrade": 11,
+    "yearOfGrade": 2021,
+    "parentID": "nn2134",
+    "sectionName": " "
+  },
+  {
+    "studentID": "nl2134",
+    "studentName": "neranj lewaa",
+    "currentGrade": 11,
+    "yearOfGrade": 2021,
+    "parentID": "le2234",
+    "sectionName": "E-11"
+  },
+  {
+    "studentID": "mm5643",
+    "studentName": "Mona Mohammed",
+    "currentGrade": 10,
+    "yearOfGrade": 2020,
+    "parentID": "mo8975",
+    "sectionName": "A-10"
+  },
+  {
+    "studentID": "ta9875",
+    "studentName": "Toqa Ahmed",
+    "currentGrade": 10,
+    "yearOfGrade": 2021,
+    "parentID": "ah4453",
+    "sectionName": " "
+  },
+  {
+  "studentID": "ss3321",
+  "studentName": "Sara Salem",
+  "currentGrade": 12,
+    "yearOfGrade": 2021,
+  "parentID": "sa3220",
+    "sectionName": "D-12"
+  },
+  {
+  "studentID": "sa2234",
+  "studentName": "Samar Ali",
+  "currentGrade": 12,
+    "yearOfGrade": 2021,
+  "parentID": "al1234",
+    "sectionName": " "
+  },
+  {
+    "studentID": "aa1123",
+    "studentName": "Ahlam Abbas",
+    "currentGrade": 12,
+    "yearOfGrade": 2021,
+    "parentID": "ab5543",
+    "sectionName": "B-12"
+  }
+]

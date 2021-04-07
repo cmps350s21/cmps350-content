@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timetable Viewer</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/section-style.css">
+
+</head>
+<body>
+<header class="container">
+    <div id="image">
+        <img src="img/logo.png" alt="logo">
+    </div>
+</header>
+<main>
+    <div class="container-div">
+    <label  class="labels" id="dropDownLabel"> Choose the Year to view the Timetable:
+
+    </label>
+    <select id="dropDown" onchange="displayTimetable(this.value)">
+        <option>--------</option>
+    </select>
+    </div>
+
+    <table id="timetable"></table>
+
+</main>
+<script src="js/timetable-viewer.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Students</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/student-style.css">
+</head>
+<body>
+<nav class="container">
+    <div id="image">
+        <img src="img/logo.png" alt="logo">
+    </div>
+    <div class="navBar">
+        <div id="sectionTab" class="navLink">Sections</div>
+        <div id="studentListTab"  class="navLink">Student Lists</div>
+        <div id="timetablesTab"  class="navLink">Timetables</div>
+    </div>
+</nav>
+<br><br><br>
+<main>
+    <form name="year-grade" id="yg-form" class="selectionPane">
+        <div class="labels-div">
+            <label>Academic Year
+                <select id="secYear" name="secYear" onchange="setYear(this.value);">
+                </select>
+            </label>
+            <label> Grade
+                <select id="secGrade" name="secGrade" onchange="filterSections(this.value); filterStudents();">
+                    <option>--------</option>
+                </select>
+            </label>
+            <label> Section
+                <select id="secName" name="secName" onchange="showStudents(this.value)">
+                    <option>--------</option>
+                </select>
+            </label>
+        </div>
+    </form>
+
+    <form name="student-info" id="form" class="selectionPane">
+        <h3>
+            Add Student
+        </h3>
+        <div class="labels-div">
+<!--            <div class="yearGradeSection">-->
+<!--&lt;!&ndash;                <label>Academic Year&ndash;&gt;-->
+<!--&lt;!&ndash;                    <select id="year" name="year">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <option>&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</option>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </select>&ndash;&gt;-->
+<!--&lt;!&ndash;                </label>&ndash;&gt;-->
+<!--&lt;!&ndash;                <label> Grade&ndash;&gt;-->
+<!--&lt;!&ndash;                    <select id="grade" name="grade" onchange="setGrade(this.value); grade=this.value">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <option>&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</option>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </select>&ndash;&gt;-->
+<!--&lt;!&ndash;                </label>&ndash;&gt;-->
+<!--&lt;!&ndash;                <label> section list&ndash;&gt;-->
+<!--&lt;!&ndash;                    <select id="sectionList" name="sectionList">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <option>&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</option>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </select>&ndash;&gt;-->
+<!--&lt;!&ndash;                </label>&ndash;&gt;-->
+<!--            </div>-->
+<!--            <br><br>-->
+            <!--            <div>-->
+            <label id="students-label"><p> Available students:</p>
+                <select id="student" name="student" multiple>
+                    <option>--------</option>
+                </select>
+            </label>
+            <!--            </div>-->
+        </div>
+        </div>
+        <div class="labels-div">
+            <label>
+                <input type="submit" id="submit" name="submit" value="Add" class="button-label">
+            </label>
+        </div>
+    </form>
+    <table class="students" id="students">
+    </table>
+    <input value="Delete Students" type="button" name="delete-students" id="delete-students" onclick="deleteStudents()">
+</main>
+<script  type="module" src="js/student.js"></script>
+</body>
+</html>

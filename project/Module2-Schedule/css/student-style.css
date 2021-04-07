@@ -1,0 +1,95 @@
+*{
+    font-family: "Segoe UI";
+    margin-bottom: 2em;
+}
+.selectionPane{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+form{
+    border-style: dashed;
+    border-color: darkslategray;
+    width: 90%;
+    alignment: center;
+
+
+}
+.labels-div{
+    width: 80%;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.button-label,#delete-students{
+    background-color: darkcyan;
+    color: white;
+    border-color: darkcyan;
+    border-radius: 5px;
+}
+#delete-students{
+    margin-top: 1em;
+    height: 2em;
+    margin-bottom: 1em;
+}
+#submit{
+    width: 150px;
+    height: 30px;
+    font-size: 1em;
+}
+h3{
+    color: darkslategray;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-decoration: underline;
+
+}
+table {
+    margin-top: 1em;
+    width: 90%;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: darkcyan;}
+tr:hover {background-color: darkcyan}
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: darkslategray;
+    color: white;
+}
+td>i{
+    margin: 10px;
+}
+.labels-div{
+    display: inline;
+}
+.yearGradeSection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#students-label>*{
+    display: block;
+    margin-bottom: 1em;
+}
+#student{
+    width: 40%;
+}
+#student>*{
+    margin-top: 0;
+    margin-bottom: 0;
+}

@@ -1,0 +1,57 @@
+.cyan_color_combination{
+    background-color: darkcyan;
+    color: white;
+}
+
+.buttons{
+    border-radius: 1rem;
+}
+
+.labels{
+    font-size: 1rem;
+    color: darkslategrey;
+}
+
+.timetable-options{
+    background-color: darkslategrey;
+    color: whitesmoke;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.timetable-form-labels{
+    width: 80%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.submit-buttons-spacing{
+    margin: 1rem 0rem;
+    width: fit-content;
+}
+
+.submit-button-div{
+    width: 80%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-items: end;
+}
+
+.navLink:hover{
+    cursor: pointer;
+    font-size: 125%;
+}
+
+#teacherDD{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 400px){
+    .timetable-form-labels{
+        flex-direction: column;
+    }
+}

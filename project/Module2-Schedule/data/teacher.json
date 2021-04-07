@@ -1,0 +1,236 @@
+[
+  {
+    "teacherId": "Ma1107",
+    "teacherName": "Mariam Ali",
+    "fieldOfProf": "Math",
+    "password": "mali712",
+    "classroom": "T05",
+    "classes": [
+      {
+        "grade": 10,
+        "section": "A-10",
+        "subject": "Math-10",
+        "year": 2020,
+        "fromTime": "8:00",
+        "toTime": "8:45",
+        "day": "Sun"
+      },
+      {
+      "grade": 10,
+      "section":"D-10",
+      "subject": "Math-10",
+        "year": 2021,
+        "fromTime": "8:00",
+        "toTime": "8:45",
+        "day": "Sun"
+    },
+      {
+        "grade": 11,
+        "section":"F-11",
+        "subject": "Math-11",
+        "year": 2021,
+        "fromTime": "8:45",
+        "toTime": "9:30",
+        "day": "Sun"
+      }
+    ]
+  },
+  {
+    "teacherId": "ka1504",
+    "teacherName": "Khawla Amr",
+    "fieldOfProf": "Math",
+    "password": "khawlakhawla2204",
+    "classroom": "T20",
+    "classes": [
+      {
+        "grade": 10,
+        "section":"A-10",
+        "subject": "Math-10",
+        "year": 2019,
+        "fromTime": "8:45",
+        "toTime": "9:30",
+        "day": "Mon"
+      },
+      {
+        "grade": 12,
+        "section":"B-12",
+        "subject": "Math-12",
+        "year": 2021,
+        "fromTime": "8:00",
+        "toTime": "8:45",
+        "day":"Tues"
+      }
+    ]
+  },
+  {
+    "teacherId": "Mo1201",
+    "teacherName": "Muna Omar",
+    "fieldOfProf": "Science",
+    "password": "muna55",
+    "classroom": "T07",
+    "classes": [
+      {
+        "grade": 11,
+        "section": "B-11",
+        "subject": "Science-11",
+        "year": 2019,
+        "fromTime": "10:45",
+        "toTime": "11:30",
+        "day": "Wed"
+        },
+      {
+        "grade": 11,
+        "section":"A-11",
+        "subject": "Science-11",
+        "year": 2020,
+        "fromTime": "10:45",
+        "toTime": "11:30",
+        "day": "Wed"
+      },
+      {
+        "grade": 12,
+        "section":"D-12",
+        "subject": "Science-12",
+        "year": 2021,
+        "fromTime": "8:45",
+        "toTime": "9:30",
+        "day": "Tues"
+      }
+    ]
+  },
+  {
+    "teacherId": "sk1907",
+    "teacherName": "Sara Khaled",
+    "fieldOfProf": "English",
+    "password": "sakh678",
+    "classroom": "T02",
+    "classes": [
+      {
+        "grade": 10,
+        "section":"D-10",
+        "subject": "English-10",
+        "year": 2021,
+        "fromTime": "10:45",
+        "toTime": "11:30",
+        "day": "Mon"
+      },
+      {
+        "grade": 12,
+        "section":"B-12",
+        "subject": "English-12",
+        "year": 2021,
+        "fromTime": "11:30",
+        "toTime": "12:15",
+        "day": "Sun"
+      }
+    ]
+  },
+  {
+    "teacherId": "ft1502",
+    "teacherName": "Fatima Tamer",
+    "fieldOfProf": "Arabic",
+    "password": "fatima15",
+    "classroom": "T11",
+    "classes": [
+      {
+        "grade": 12,
+        "section":"D-12",
+        "subject": "Arabic-12",
+        "year": 2021,
+        "fromTime": "10:45",
+        "toTime": "11:30",
+        "day": "Sun"
+      },
+      {
+        "grade": 12,
+        "section":"A-12",
+        "subject": "Arabic-12",
+        "year": 2019,
+        "fromTime": "8:45",
+        "toTime": "9:30",
+        "day": "Thurs"
+      }
+    ]
+  },
+  {
+    "teacherId": "kf1202",
+    "teacherName": "Khadija Farid",
+    "fieldOfProf": "Islamic Studies",
+    "password": "farid0909",
+    "classroom": "T03",
+    "classes": [
+      {
+        "grade": 11,
+        "section":"E-11",
+        "subject": "Islamic Studies-11",
+        "year": 2021,
+        "fromTime": "9:30",
+        "toTime": "10:15",
+        "day": "Mon"
+      },
+      {
+        "grade": 11,
+        "section":"F-11",
+        "subject": "Islamic Studies-11",
+        "year": 2021,
+        "fromTime": "12:15",
+        "toTime": "1:00",
+        "day": "Mon"
+      }
+    ]
+  },
+  {
+    "teacherId": "te1802",
+    "teacherName": "Tasneem Ehab",
+    "fieldOfProf": "Physics",
+    "password": "tasneemE22",
+    "classroom": "T15",
+    "classes": [
+      {
+        "grade": 10,
+        "section":"B-10",
+        "subject": "Physics-10",
+        "year": 2019,
+        "fromTime": "8:00",
+        "toTime": "8:45",
+        "day": "Thurs"
+      },
+      {
+        "grade": 11,
+        "section":"B-11",
+        "subject": "Physics-11",
+        "year": 2020,
+        "fromTime": "8:45",
+        "toTime": "9:00",
+        "day": "Wed"
+      }
+    ]
+  },
+  {
+    "teacherId": "ha1009",
+    "teacherName": "Heba Adel",
+    "fieldOfProf": "Chemistry",
+    "password": "hebadel2203",
+    "classroom": "T18",
+    "classes": [
+      {
+        "grade": 12,
+        "section":"A-12",
+        "subject": "Chemistry-12",
+        "year": 2020,
+        "fromTime": "9:30",
+        "toTime": "10:15",
+        "day": "Mon"
+      },
+      {
+        "grade": 12,
+        "section":"C-12",
+        "subject": "Chemistry-12",
+        "year": 2020,
+        "fromTime": "8:00",
+        "toTime": "8:45",
+        "day": "Mon"
+      }
+    ]
+  }
+]

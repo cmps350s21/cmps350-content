@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timetable Editor</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/section-style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header class="container">
+    <div id="image">
+        <img src="img/logo.png" alt="logo">
+    </div>
+    <div class="navBar">
+        <div id="sectionTab" class="navLink">Sections</div>
+        <div id="studentListTab"  class="navLink">Student Lists</div>
+        <div id="timetablesTab"  class="navLink">Timetables</div>
+    </div>
+</header>
+<main>
+
+    <div class="container-div">
+        <label class="navLink timetable-options" id="teacherOption" onclick="displayTimetableForm(this.id)">Teachers</label>
+        <label class="navLink timetable-options" id="sectionOption" onclick="displayTimetableForm(this.id)">Sections</label>
+    </div>
+
+    <label id="teacherSelector">
+        Select the teacher to view their current Timetable
+        <select id="teacherDD" class="selectionPane" onchange="displayTeacherClasses(this.value)">
+            <option>--------</option>
+        </select>
+    </label>
+
+
+    <form name="section-info" id="section-info" class="selectionPane">
+        <div class="labels-div">
+        <label  class="labels"  >Academic Year
+            <select id="year" name="year" onchange="setYear(this.value); populateGrades()">
+                <option>--------</option>
+            </select>
+        </label>
+        <label  class="labels"> Grade
+            <select id="grade" name="grade" onchange="populateSection(this.value)" >
+                <option>--------</option>
+            </select>
+        </label>
+        <label class="labels"> Section
+            <select id="section"  name="section" onchange="populateClassInfo()" >
+                <option>--------</option>
+            </select>
+        </label>
+        </div>
+    </form>
+
+    <form id="section-timetable-form" class="selectionPane">
+        <h3>Class Info</h3>
+        <div class="timetable-form-labels">
+        <label class="labels">Day <select id="day" name="day" onchange="getDay(this.value)" >
+            <option>--------</option>
+        </select></label>
+        <label class="labels">Subject <select id="subject" name="subject" onchange="getSubject(this.value)">
+            <option>--------</option>
+        </select></label>
+
+        <label class="labels">From <select id="from-time" name="from-time" onchange="getFromTime(this.value)" >
+            <option>--------</option>
+        </select></label>
+        <label class="labels">To <select id="to-time" name="to-time" onchange="populateTeachers(this.value)">
+            <option>--------</option>
+        </select></label>
+
+        <label class="labels">Teacher <select id="teacher" name="teacher" >
+            <option>--------</option>
+        </select></label>
+        </div>
+        <div class="submit-button-div">
+            <input type="submit" value="Add Class" class="submit-buttons-spacing button-label" id="submit">
+        </div>
+    </form>
+
+    <table id="classesTimetable">
+
+    </table>
+</main>
+
+<script src="js/timetable.js" type="module"></script>
+</body>
+</html>

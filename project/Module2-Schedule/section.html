@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sections</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/section-style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="section-body">
+<nav class="container">
+    <div id="image">
+        <img src="img/logo.png" alt="logo">
+    </div>
+    <div class="navBar">
+        <div id="sectionTab" class="navLink">Sections</div>
+        <div id="studentListTab"  class="navLink">Student Lists</div>
+        <div id="timetablesTab"  class="navLink">Timetables</div>
+    </div>
+</nav>
+<br><br><br>
+<main id="main">
+    <form name="section-info" id="form" class="selectionPane">
+        <h3 id="add-section-header">
+            Add Section
+        </h3>
+        <div class="labels-div">
+<!--        <label>Academic Year-->
+<!--            <select id="year" name="year" onchange="setYear(this.value); populateGrades();">-->
+<!--            </select>-->
+<!--        </label>-->
+        <label> Grade
+            <select id="grade" name="grade" onchange="setGrade(this.value)" required>
+            </select>
+        </label>
+
+
+        <label> Section name
+            <input type="text" id="sectionName" name="sectionName" required>
+        </label>
+        </div>
+        <div class="labels-div">
+        <label> Section Capacity
+            <input type="number" id="capacity" name="capacity" required>
+        </label>
+
+        </label>
+
+        <label> Home room Teacher
+            <select  id="homeRoomTeacher" name="homeRoomTeacher" required>
+            </select>
+        </label>
+        </div>
+        <div class="labels-div">
+            <label>
+                <input type="submit" id="submit" name="submit" class="button-label">
+            </label>
+        </div>
+    </form>
+    <form name="year-grade" id="yg-form" class="selectionPane">
+        <div class="labels-div" id="year-grade-div">
+            <label>Academic Year
+                <select id="secYear" name="secYear" onchange="setYear(this.value); populateGrades();">
+                </select>
+            </label>
+            <label> Grade
+                <select id="secGrade" name="secGrade" onchange="filterSections(this.value)">
+                </select>
+            </label>
+        </div>
+    </form>
+
+    <table class="sections" id="sections">
+    </table>
+    <label>
+        <input type="button" id="copySetUp" name="copySetUp" value="Copy setup from last year" class="button-label"
+               onclick="copySetup()"
+        >
+    </label>
+
+    <div id="view-modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div id="options-div">
+                <div id="viewSection" class="option-div">
+                    <p>section's details</p>
+                </div>
+                <br>
+                <div id="viewCourses" class="option-div">
+                    <p>section's courses</p>
+                </div>
+                <br>
+                <div id="viewStudents" class="option-div">
+                    <p>section's students</p>
+                </div>
+            </div>
+            <div id="show-content">
+            </div>
+            <i id="exit-modal" class="fa fa-times" aria-hidden="true"></i>
+
+        </div>
+    </div>
+</main>
+<script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
+<script  type="module" src="js/section.js"></script>
+</body>
+</html>

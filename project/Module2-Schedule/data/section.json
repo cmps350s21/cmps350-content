@@ -1,0 +1,324 @@
+[
+  {
+    "year": 2019,
+    "grade": 10,
+    "sectionName": "A-10",
+    "capacity": 30,
+    "homeRoomTeacher": "Mariam Ali",
+    "classes": [
+      {
+        "subject": "Math-10",
+        "fromTime": "8:45",
+        "toTime": "9:30",
+        "day": "Mon",
+        "teacher": "Khawla Amr"
+      }
+    ],
+    "students": [
+    ]
+  },
+  {
+    "year": 2019,
+    "grade": 10,
+    "sectionName": "B-10",
+    "capacity": 25,
+    "homeRoomTeacher": "Muna Omar",
+    "classes": [
+      {
+        "subject": "Physics-10",
+        "fromTime": "8:00",
+        "toTime": "8:45",
+        "day": "Thurs",
+        "teacher": "Tasneem Ehab"
+      }
+    ],
+    "students": [
+    ]
+  },
+  {
+    "year": 2019,
+    "grade": 11,
+    "sectionName": "B-11",
+    "capacity": 25,
+    "homeRoomTeacher": "Heba Adel",
+    "classes": [
+      {
+        "subject": "Science-11",
+        "fromTime": "10:45",
+        "toTime": "11:30",
+        "day": "Wed",
+        "teacher": "Muna Omar"
+      }
+    ],
+    "students": [
+    ]
+  },
+  {
+    "year": 2019,
+    "grade": 12,
+    "sectionName": "A-12",
+    "capacity": 35,
+    "homeRoomTeacher": "Fatima Tamer",
+    "classes": [
+      {
+        "subject": "Arabic-12",
+        "fromTime": "8:45",
+        "toTime": "9:30",
+        "day": "Thurs",
+        "teacher": "Fatima Tamer"
+      }
+    ],
+    "students": [
+    ]
+  },
+  {
+    "year": 2020,
+    "grade": 10,
+    "sectionName": "A-10",
+    "capacity": 32,
+    "homeRoomTeacher": "Khawla Amr",
+    "classes": [
+      {
+        "subject": "Math-10",
+        "fromTime": "8:00",
+        "toTime": "8:45",
+        "day": "Sun",
+        "teacher": "Mariam Ali"
+      }
+    ],
+    "students": [
+      {
+        "studentID": "mm5643",
+        "studentName": "Mona Mohammed",
+        "currentGrade": 10,
+        "parentID": "mo8975",
+        "sectionName": "A-10"
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "grade": 11,
+    "sectionName": "A-11",
+    "capacity": 35,
+    "homeRoomTeacher": "Khadija Farid",
+    "classes": [
+      {
+        "subject": "Science-11",
+        "fromTime": "10:45",
+        "toTime": "11:30",
+        "day": "Wed",
+        "teacher": "Muna Omar"
+      }
+    ],
+    "students": [
+    ]
+  },
+  {
+    "year": 2020,
+    "grade": 11,
+    "sectionName": "B-11",
+    "capacity": 35,
+    "homeRoomTeacher": "Tasneem Ehab",
+    "classes": [
+      {
+        "subject": "Physics-11",
+        "fromTime": "8:45",
+        "toTime": "9:00",
+        "day": "Wed",
+        "teacher": "Tasneem Ehab"
+      }
+    ],
+    "students": [
+      {
+        "studentID": "sa0512",
+        "studentName": "Samar Ali",
+        "currentGrade": 11,
+        "parentID": "al2200",
+        "sectionName": "B-11"
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "grade": 12,
+    "sectionName": "A-12",
+    "capacity": 27,
+    "homeRoomTeacher": "Mariam Ali",
+    "classes": [
+      {
+        "subject": "Chemistry-12",
+        "fromTime": "9:30",
+        "toTime": "10:15",
+        "day": "Mon",
+        "teacher": "Heba Adel"
+      }
+    ],
+    "students": [
+    ]
+  },
+  {
+    "year": 2020,
+    "grade": 12,
+    "sectionName": "C-12",
+    "capacity": 30,
+    "homeRoomTeacher": "Sara Khaled",
+    "classes": [
+      {
+        "subject": "Chemistry-12",
+        "fromTime": "8:00",
+        "toTime": "8:45",
+        "day": "Mon",
+        "teacher": "Heba Adel"
+      }
+    ],
+    "students": [
+    ]
+  },
+  {
+    "year": 2021,
+    "grade": 10,
+    "sectionName": "D-10",
+    "capacity": 28,
+    "homeRoomTeacher": "Mariam Ali",
+    "classes": [
+      {
+        "subject": "Math-10",
+        "fromTime": "8:00",
+        "toTime": "8:45",
+        "day": "Sun",
+        "teacher": "Mariam Ali"
+      },
+      {
+        "subject": "English-10",
+        "fromTime": "10:45",
+        "toTime": "11:30",
+        "day": "Mon",
+        "teacher": "Sara Khaled"
+      }
+    ],
+    "students": [
+    ]
+  },
+  {
+    "year": 2021,
+    "grade": 11,
+    "sectionName": "F-11",
+    "capacity": 35,
+    "homeRoomTeacher": "Khadija Farid",
+    "classes": [
+      {
+        "subject": "Math-11",
+        "fromTime": "8:45",
+        "toTime": "9:30",
+        "day": "Sun",
+        "teacher": "Mariam Ali"
+      },
+      {
+        "subject": "Islamic Studies-11",
+        "fromTime": "12:15",
+        "toTime": "1:00",
+        "day": "Mon",
+        "teacher": "Khadija Farid"
+      }
+    ],
+    "students": [
+      {
+        "studentID": "sa0512",
+        "studentName": "Samar Ali",
+        "currentGrade": 11,
+        "parentID": "al2200",
+        "sectionName": "F-11"
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "grade": 11,
+    "sectionName": "E-11",
+    "capacity": 30,
+    "homeRoomTeacher": "Muna Omar",
+    "classes": [
+      {
+        "subject": "Islamic Studies-11",
+        "fromTime": "9:30",
+        "toTime": "10:15",
+        "day": "Mon",
+        "teacher": "Khadija Farid"
+      }
+    ],
+    "students": [
+      {
+        "studentID": "nl2134",
+        "studentName": "neranj lewaa",
+        "currentGrade": 11,
+        "parentID": "le2234",
+        "sectionName": "E-11"
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "grade": 12,
+    "sectionName": "D-12",
+    "capacity": 33,
+    "homeRoomTeacher": "Sara Khaled",
+    "classes": [
+      {
+        "subject": "Science-12",
+        "fromTime": "8:45",
+        "toTime": "9:30",
+        "day": "Tues",
+        "teacher": "Muna Omar"
+      },
+      {
+        "subject": "Arabic-12",
+        "fromTime": "10:45",
+        "toTime": "11:30",
+        "day": "Sun",
+        "teacher": "Fatima Tamer"
+      }
+    ],
+    "students": [
+      {
+        "studentID": "ss3321",
+        "studentName": "Sara Salem",
+        "currentGrade": 12,
+        "parentID": "sa3220",
+        "sectionName": "D-12"
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "grade": 12,
+    "sectionName": "B-12",
+    "capacity": 30,
+    "homeRoomTeacher": "Heba Adel",
+    "classes": [
+      {
+        "subject": "Math-12",
+        "fromTime": "8:00",
+        "toTime": "8:45",
+        "day": "Tues",
+        "teacher": "Khawla Amr"
+      },
+      {
+        "subject": "English-12",
+        "fromTime": "11:30",
+        "toTime": "12:15",
+        "day": "Sun",
+        "teacher": "Sara Khaled"
+      }
+    ],
+    "students": [
+      {
+        "studentID": "aa1123",
+        "studentName": "Ahlam Abbas",
+        "currentGrade": 12,
+        "parentID": "ab5543",
+        "sectionName": "B-12"
+      }
+    ]
+  }
+]
