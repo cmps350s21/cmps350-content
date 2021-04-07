@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Payment Management - Login</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div id="navBar">
+      <div>
+        <ul>
+          <li style="float: left">
+            <a style="cursor: pointer" class="TITLE">Payment Management</a>
+          </li>
+          <!-- <li style="float: right">
+            <a style="cursor: pointer" href="./Register.html">SignUp</a>
+          </li> -->
+          <li style="float: right">
+            <a style="cursor: pointer" href="#">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="mainBody">
+      <h1 style="text-align: center; color: gray">
+        Welcome To Payment Management
+      </h1>
+      <p style="text-align: center; color: black">Please Log In To Proceed</p>
+      <br /><br />
+      <div align="center" style="font: 14px sans-serif">
+        <div class="wrapper">
+          <div class="form-group">
+            <label style="float: left">Email:</label
+            ><input
+              id="email"
+              placeholder="Email"
+              type="email"
+              name="email"
+              required
+              class="form-control wrapper"
+            /><span id="emailError" class="help-block"></span>
+          </div>
+          <div class="form-group">
+            <label style="float: left">Password:</label
+            ><input
+              id="password"
+              placeholder="Password"
+              type="password"
+              required
+              name="password"
+              class="form-control wrapper"
+            /><span id="passwordError" class="help-block"></span>
+          </div>
+          <div>
+            <span id="loginError" class="help-block"></span>
+            <div class="wrapper btn-toolbar doubleButtons">
+              <button id="loginButton" class="btn btn-primary">LogIn</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <script type="module" src="js/login.js"></script>
+  </body>
+</html>

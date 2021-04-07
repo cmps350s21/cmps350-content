@@ -1,0 +1,200 @@
+[
+    {
+        "id": 1,
+        "payment_id": 9,
+        "email": "parent4@gmail.com",
+        "category": "Admission Fee",
+        "student": "Oswald Ripper",
+        "amount": "214",
+        "remaining": 0,
+        "type": "Bank Card",
+        "date": "2021-03-22T11:12:10.244Z"
+    },
+    {
+        "id": 2,
+        "payment_id": 10,
+        "email": "parent4@gmail.com",
+        "category": "Admission Fee",
+        "student": "Benjamen Ripper",
+        "amount": "400",
+        "remaining": 28,
+        "type": "Cash",
+        "date": "2021-02-22T11:12:17.596Z"
+    },
+    {
+        "id": 3,
+        "payment_id": 10,
+        "email": "parent4@gmail.com",
+        "category": "Admission Fee",
+        "student": "Benjamen Ripper",
+        "amount": "28",
+        "remaining": 0,
+        "type": "Bank Card",
+        "date": "2021-03-01T11:12:27.455Z"
+    },
+    {
+        "id": 4,
+        "payment_id": 8,
+        "email": "parent4@gmail.com",
+        "category": "Tuition Fee",
+        "student": "Oswald Ripper",
+        "amount": "2000",
+        "remaining": 2252,
+        "type": "Cheque",
+        "date": "2020-03-22T11:12:34.418Z"
+    },
+    {
+        "id": 5,
+        "payment_id": 11,
+        "email": "parent4@gmail.com",
+        "category": "Tuition Fee",
+        "student": "Benjamen Ripper",
+        "amount": "2000",
+        "remaining": 4090,
+        "type": "Cheque",
+        "date": "2021-01-22T11:12:39.905Z"
+    },
+    {
+        "id": 6,
+        "payment_id": 4,
+        "email": "parent2@gmail.com",
+        "category": "Admission Fee",
+        "student": "Torey Barnicott",
+        "amount": "268",
+        "remaining": 0,
+        "type": "Cash",
+        "date": "2021-01-10T11:20:36.200Z"
+    },
+    {
+        "id": 7,
+        "payment_id": 5,
+        "email": "parent2@gmail.com",
+        "category": "Tuition Fee",
+        "student": "Torey Barnicott",
+        "amount": "1000",
+        "remaining": 3777,
+        "type": "Cash",
+        "date": "2021-02-25T11:20:39.915Z"
+    },
+    {
+        "id": 8,
+        "payment_id": 3,
+        "email": "parent2@gmail.com",
+        "category": "Tuition Fee",
+        "student": "Sean Barnicott",
+        "amount": "2500",
+        "remaining": 2540,
+        "type": "Cash",
+        "date": "2021-03-22T11:20:44.853Z"
+    },
+    {
+        "id": 9,
+        "payment_id": 1,
+        "email": "parent1@gmail.com",
+        "category": "Tuition Fee",
+        "student": "Rudolf Cominotti",
+        "amount": "5040",
+        "remaining": 0,
+        "type": "Cash",
+        "date": "2020-03-22T11:29:50.243Z"
+    },
+    {
+        "id": 10,
+        "payment_id": 2,
+        "email": "parent1@gmail.com",
+        "category": "Tuition Fee",
+        "student": "Grant Cominotti",
+        "amount": "8000",
+        "remaining": 295,
+        "type": "Cheque",
+        "date": "2021-01-22T11:29:54.146Z"
+    },
+    {
+        "id": 11,
+        "payment_id": 13,
+        "email": "parent2@gmail.com",
+        "category": "Transportation Fee",
+        "student": "Torey Barnicott",
+        "amount": "2000",
+        "remaining": 1000,
+        "type": "Cheque",
+        "date": "2021-03-11T00:56:37.346Z"
+    },
+    {
+        "id": 12,
+        "payment_id": 12,
+        "email": "parent4@gmail.com",
+        "category": "Transportation Fee",
+        "student": "Oswald Ripper",
+        "amount": "200",
+        "remaining": 2800,
+        "type": "Credit Card",
+        "date": "2021-01-22T11:57:51.691Z"
+    },
+    {
+        "id": 13,
+        "payment_id": 12,
+        "email": "parent4@gmail.com",
+        "category": "Transportation Fee",
+        "student": "Oswald Ripper",
+        "amount": "2000",
+        "remaining": 800,
+        "type": "Credit Card",
+        "date": "2021-02-22T11:57:55.103Z"
+    },
+    {
+        "id": 14,
+        "payment_id": 11,
+        "email": "parent4@gmail.com",
+        "category": "Tuition Fee",
+        "student": "Benjamen Ripper",
+        "amount": "300",
+        "remaining": 3790,
+        "type": "Cash",
+        "date": "2021-02-22T11:57:59.074Z"
+    },
+    {
+        "id": 15,
+        "payment_id": 8,
+        "email": "parent4@gmail.com",
+        "category": "Tuition Fee",
+        "student": "Oswald Ripper",
+        "amount": "2000",
+        "remaining": 252,
+        "type": "Cash",
+        "date": "2020-02-22T11:58:05.716Z"
+    },
+    {
+        "id": 16,
+        "payment_id": 11,
+        "email": "parent4@gmail.com",
+        "category": "Tuition Fee",
+        "student": "Benjamen Ripper",
+        "amount": "300",
+        "remaining": 3490,
+        "type": "Bank Card",
+        "date": "2021-03-01T11:58:08.113Z"
+    },
+    {
+        "id": 17,
+        "payment_id": 11,
+        "email": "parent4@gmail.com",
+        "category": "Tuition Fee",
+        "student": "Benjamen Ripper",
+        "amount": "3000",
+        "remaining": 490,
+        "type": "Bank Deposit",
+        "date": "2021-03-20T11:58:11.826Z"
+    },
+    {
+        "id": 18,
+        "payment_id": 14,
+        "email": "parent1@gmail.com",
+        "category": "Transportation Fee",
+        "student": "Rudolf Cominotti",
+        "amount": "3000",
+        "remaining": 0,
+        "type": "Bank Deposit",
+        "date": "2021-03-22T12:00:46.123Z"
+    }
+]

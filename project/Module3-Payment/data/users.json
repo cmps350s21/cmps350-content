@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "Charlie Cominotti",
+        "email": "parent1@gmail.com",
+        "gender": "Male",
+        "type": "parent",
+        "password": "12345678",
+        "children": [
+            {
+                "id": 1,
+                "name": "Rudolf Cominotti",
+                "grade": "6",
+                "age": 9
+            },
+            {
+                "id": 2,
+                "name": "Grant Cominotti",
+                "grade": "11",
+                "age": 15
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Wilmar Barnicott",
+        "email": "parent2@gmail.com",
+        "gender": "Male",
+        "type": "parent",
+        "password": "12345678",
+        "children": [
+            {
+                "id": 3,
+                "name": "Sean Barnicott",
+                "grade": "5",
+                "age": 8
+            },
+            {
+                "id": 4,
+                "name": "Torey Barnicott",
+                "grade": "3",
+                "age": 6
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Marchelle Yvens",
+        "email": "parent3@gmail.com",
+        "gender": "FeMale",
+        "type": "parent",
+        "password": "12345678",
+        "children": [
+            {
+                "id": 5,
+                "name": "Marv Yvens",
+                "grade": "8",
+                "age": 11
+            },
+            {
+                "id": 6,
+                "name": "Arne Yvens",
+                "grade": "1",
+                "age": 3
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Felic Ripper",
+        "email": "parent4@gmail.com",
+        "gender": "Male",
+        "type": "parent",
+        "password": "12345678",
+        "children": [
+            {
+                "id": 7,
+                "name": "Oswald Ripper",
+                "grade": "KG",
+                "age": 2
+            },
+            {
+                "id": 8,
+                "name": "Benjamen Ripper",
+                "grade": "10",
+                "age": 13
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Chrisy Undrill",
+        "email": "principle@gmail.com",
+        "gender": "FeMale",
+        "type": "principle",
+        "password": "12345678"
+    }
+]

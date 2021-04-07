@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Payment Management</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div id="navBar">
+      <div>
+        <ul>
+          <li style="float: left">
+            <a style="cursor: pointer" class="TITLE">Payment Management</a>
+          </li>
+          <!-- <li style="float: right">
+            <a style="cursor: pointer" href="./views/Register.html">SignUp</a>
+          </li> -->
+          <li style="float: right">
+            <a style="cursor: pointer" href="Login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="mainBody">
+      <div class="welcome">
+        <div class="title m-b-md">Payment Management</div>
+        <div class="links">
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+      <script type="module" src="./js/app.js"></script>
+    <!-- Principle -->
+    <script
+      type="text/javascript"
+      src="./js/principle/buildPendeingPayments.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./js/principle/buildBusServicePayment.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./js/principle/buildReceivedPaymentsReport.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./js/principle/buildPendingPaymentsReport.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./js/principle/buildDuoPayments.js"
+    ></script>
+    <!-- Parent -->
+    <script
+      type="text/javascript"
+      src="./js/parent/buildPendingPaymnts.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./js/parent/buildBusService.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./js/parent/buildPaymentHistory.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,330 @@
+* {
+     box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/*MAIN DIVS STLYE*/
+#navBar {
+    min-height: 20vh;
+}
+#mainBody{
+    height: 75vh;
+    overflow-y: scroll;
+}
+#footer{
+    min-height: 5vh;
+}
+/*END OF MAIN DIV STYLE*/
+
+
+/* WELCOME STYEL */
+.welcome {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.title {
+    font-size: 84px;
+}
+.links > a , .links > p{
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.m-b-md {
+    margin-bottom: 30px;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+    background-color: transparent;
+
+}
+
+a:hover, a:focus {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+a:active, a:hover {
+    outline: 0;
+}
+
+
+
+/* END OF WELCOME */
+
+/*NAV BAR STYLE*/
+.TITLE {
+    font-size: 18px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    height: 53px;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+/*END OF NAV STYLE*/
+
+.wrapper{
+    width: 350px;
+    padding: 10px;
+}
+
+.actionWrapper{
+    height: 34px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    width: 50%;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+}
+
+.actionWrapperText{
+    height: 34px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    width: 80%;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+}
+
+.doubleButtons{
+    justify-content: space-evenly;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+/*FORM CSS*/
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+}
+
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+.help-block {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #737373;
+}
+
+.form-select {
+    padding: .375rem 0.25rem .375rem 0.25rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #212529;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size: 16px 12px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.search-bar{
+    background-position: 10px 12px; 
+    background-repeat: no-repeat; 
+    width: 100%; 
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #212529;
+    margin-bottom: 12px;
+}
+
+.w-60 {
+    width: 40%;
+}
+
+.addButton {
+    display: block;
+    color: #666;
+    width: fit-content;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #f3f3f3;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.filter {
+    display: block;
+    padding: 14px 16px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    color: #666;
+    width: fit-content;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #f3f3f3;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+/*END OF FORM CSS*/
+
+/*Table Styling*/
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+    border-collapse:separate;
+    border-radius:6px;
+    -moz-border-radius:6px;
+    background-color: transparent;
+    border-spacing: 0;
+}
+
+td:first-child, th:first-child {
+    border-left: none;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+th{
+    border-top: none;
+}
+#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+#t01 tr:nth-child(odd) {
+    background-color: #fff;
+}
+#t01 th {
+    background-color: #8e8e8e;
+    color: white;
+}
+/*END OF TABLE STYLE*/
