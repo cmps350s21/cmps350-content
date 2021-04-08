@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration | School</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="../css/common-styles.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <!-- To get the header and footer styles -->
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <nav class="navbar">
+        <div class="container flex">
+            <h1>Registration Form</h1>
+        </div>
+    </nav>
+</header>
+
+<!-- Main -->
+<main>
+    <div class="container">
+        <form id="registration_form" class="form-div">
+            <fieldset>
+                <legend>Account Info</legend>
+                <div class="grid">
+                    <div class="filed">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="filed">
+                        <label for="pass">Password</label>
+                        <input type="password" id="pass" name="password" required>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Father Details</legend>
+                <div class="grid">
+                    <div class="filed">
+                        <label for="f_fname">First Name</label><br>
+                        <input type="text" id="f_fname" name="f_fname" required>
+                    </div>
+                    <div class="filed">
+                        <label for="f_lname">Last Name</label><br>
+                        <input type="text" id="f_lname" name="f_lname" required>
+                    </div>
+                    <div class="filed">
+                        <label for="f_id">National ID</label><br>
+                        <input type="number" id="f_id" name="f_id" required>
+                    </div>
+                    <div class="filed">
+                        <label for="f_homephone">Home Phone</label><br>
+                        <input type="number" id="f_homephone" name="f_homephone" required>
+                    </div>
+                    <div class="filed">
+                        <label for="f_mobile">Mobile</label><br>
+                        <input type="number" id="f_mobile" name="f_mobile" required>
+                    </div>
+                    <div class="filed">
+                        <label for="f_email">Email Address</label><br>
+                        <input type="email" id="f_email" name="f_email" required>
+                    </div>
+                    <div class="filed">
+                        <label for="f_occupation">Occupation</label><br>
+                        <input type="text" id="f_occupation" name="f_occupation" required>
+                    </div>
+                    <div class="filed">
+                        <label for="f_employer">Employer</label><br>
+                        <input type="text" id="f_employer" name="f_employer" required>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Mother Details</legend>
+                <div class="grid">
+                    <div class="filed">
+                        <label for="m_fname">First Name</label><br>
+                        <input type="text" id="m_fname" name="m_fname" required>
+                    </div>
+                    <div class="filed">
+                        <label for="m_lname">Last Name</label><br>
+                        <input type="text" id="m_lname" name="m_lname" required>
+                    </div>
+                    <div class="filed">
+                        <label for="m_id">National ID</label><br>
+                        <input type="number" id="m_id" name="m_id" required>
+                    </div>
+                    <div class="filed">
+                        <label for="m_homephone">Home Phone</label><br>
+                        <input type="number" id="m_homephone" name="m_homephone" required>
+                    </div>
+                    <div class="filed">
+                        <label for="m_mobile">Mobile</label><br>
+                        <input type="number" id="m_mobile" name="m_mobile" required>
+                    </div>
+                    <div class="filed">
+                        <label for="m_email">Email Address</label><br>
+                        <input type="email" id="m_email" name="m_email" required>
+                    </div>
+                    <div class="filed">
+                        <label for="m_occupation">Occupation</label><br>
+                        <input type="text" id="m_occupation" name="m_occupation" required>
+                    </div>
+                    <div class="filed">
+                        <label for="m_employer">Employer</label><br>
+                        <input type="text" id="m_employer" name="m_employer" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <input class="submit-button btn" type="submit" value="Submit">
+
+        </form>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="container grid grid-3">
+        <div>
+            <h1>School</h1>
+            <p>Copyright &copy; 2020 School<br>All Rights Reserved</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.htm">About</a></li>
+            </ul>
+        </nav>
+        <div class="social">
+            <a href="#"><i class="fab fa-github fa-2x"></i></a>
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="../lib/form-data-json.min.js"></script>
+<script type="module" src=../js/register.js></script>
+</body>
+</html>

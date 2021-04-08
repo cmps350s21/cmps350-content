@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Principal View</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="../css/common-styles.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <!-- To get the header and footer styles -->
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/principal-view.css">
+    <script src="../js/principal-application-view.js"></script>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <nav class="navbar">
+        <div class="container flex">
+            <h1>Application </h1>
+        </div>
+    </nav>
+</header>
+
+<!-- Main -->
+<main>
+    <div class="container">
+        <!-- Non editable view for admission application -->
+        <fieldset>
+            <legend>Application Information</legend>
+            <section>
+                <div style="margin: 10px auto; padding: 20px;">
+                    <div>
+                        <table class="view-app-content" style="width: 70%"></table>
+                    </div>
+                </div>
+            </section>
+        </fieldset>
+
+        <!-- Note model -->
+        <section class="model note-model" id="note-model">
+            <div class="model-content filed textarea_filed" style="margin: 70px auto; padding: 20px;">
+                <span class="note-model-close-btn close">&times;</span>
+                <h2>Write a Note:</h2>
+                <textarea style="height: 400px;" id="note" name="note" required></textarea>
+                <input style="background-color: var(--primary-color); font-size: 1.4rem;" class="submit-button btn"
+                       onclick="saveNote()" type="button"
+                       value="Save">
+            </div>
+        </section>
+
+        <!-- Notes list to be edited (delete,..) model -->
+        <section class="model edit-delete-notes-model" id="edit-delete-notes-model">
+            <div class="model-content notes-list-div">
+                <span class="edit-delete-notes-model-close-btn close">&times;</span>
+                <fieldset>
+                    <legend>Notes</legend>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Note</th>
+                            <th>Action</th>
+                        </tr>
+                        </thead>
+                        <tbody class="notes-list"></tbody>
+                    </table>
+                </fieldset>
+            </div>
+        </section>
+
+        <!-- Attachment model -->
+        <section class="model attachment-model" id="attachment-model">
+            <div class="model-content" style="margin: 70px auto; padding: 20px;">
+                <span class="attachment-model-close-btn close">&times;</span>
+                <h2>Add Attachment:</h2>
+                <input type="file" id="attachment">
+                <div class="attachment-model-content">
+                    <br><img id="attachment-image" alt="Image" style="max-height: 200px">
+                </div>
+                <br>
+                <input style=" width: auto; background-color: var(--primary-color); font-size: 1rem;"
+                       class="submit-button btn"
+                       onclick="saveAttachment()" type="button"
+                       value="Save">
+            </div>
+        </section>
+
+        <!-- Attachments list to be edited (delete,..) model -->
+        <section class="model edit-delete-attachments-model" id="edit-delete-attachments-model">
+            <div class="model-content attachments-list-div">
+                <span class="edit-delete-attachments-model-close-btn close">&times;</span>
+                <fieldset>
+                    <legend>Attachments</legend>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Attachment</th>
+                            <th>Action</th>
+                        </tr>
+                        </thead>
+                        <tbody class="attachments-list"></tbody>
+                    </table>
+                </fieldset>
+            </div>
+        </section>
+
+        <!-- Change Status model -->
+        <section class="model change-status-model" id="change-status-model">
+            <div class="model-content" style="margin: 70px auto; padding: 20px;">
+                <span class="change-status-model-close-btn close">&times;</span>
+                <h2>Change Status:</h2>
+                <div class="change-status-model-content">
+                </div>
+                <br>
+                <input style=" width: auto; background-color: var(--primary-color); font-size: 1rem;"
+                       class="submit-button btn"
+                       onclick="updateStatus()" type="button"
+                       value="Save">
+            </div>
+        </section>
+
+        <!-- Add test result -->
+        <section class="model test-result-model" id="test-result-model">
+            <div class="model-content" style="margin: 70px auto; padding: 20px; width: 30%">
+                <span class="test-result-model-close-btn close">&times;</span>
+                <h2>Test Result:</h2>
+                <br>
+                <label for="test">Test Name</label><input type="text" class="filed" id="test" name="test" required/>
+                <br><br>
+                <label for="score">Test Score</label><input type="number" class="filed" id="score" name="score"
+                                                            required/>
+                <br><br>
+                <input style="background-color: var(--primary-color); font-size: 1.4rem; width: 25%"
+                       class="submit-button btn"
+                       onclick="saveTest()" type="button"
+                       value="Save">
+            </div>
+        </section>
+
+        <div class="actions" style="margin: auto">
+            <button class="btn action-btn" onclick="addNoteModel()">Add Note</button>
+            <button class="btn action-btn" onclick="showNotesModel()">Show Notes</button>
+            <button class="btn action-btn" onclick="addAttachmentModel()">Add Attachment</button>
+            <button class="btn action-btn" onclick="showAttachmentsModel()">Show Attachments</button>
+            <button class="btn action-btn green" onclick="changeAdmissionStatusModel()">Change Status</button>
+            <button class="btn action-btn green" onclick="testResultModel()">Add Test Result</button>
+        </div>
+    </div>
+</main>
+
+<script type="module" src=../js/principal-application-view.js></script>
+</body>

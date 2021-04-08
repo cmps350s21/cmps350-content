@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome | School</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="../css/common-styles.css">
+    <link rel="stylesheet" href="../css/user-home.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <!-- To get the header and footer styles -->
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container flex">
+            <div class="flex">
+                <img class="logo-img" src="../img/logo.png" alt="School Logo">
+                <h1 class="logo">The School</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="admission.html">Admission Application</a></li>
+                    <li><a class="editUserAccount" href="#">Edit My Account</a></li>
+                    <li><a class="logOut" href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </nav>
+</header>
+
+<!-- Main -->
+<main>
+    <div class="main-container container">
+
+        <!-- User Admissions list Table -->
+        <section class="user-admissions">
+            <h2 class="table-name text-center">Applications List</h2>
+            <div>
+                <table class="admissions-table">
+                    <thead id="admissions-table-head">
+                    <tr>
+                        <th>Application for</th>
+                        <th>Date Created</th>
+                        <th>Academic Year</th>
+                        <th>Status</th>
+                        <th colspan="2">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody id="admissions-table-body"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Note model -->
+        <section class="model note-model" id="note-model">
+            <div class="model-content filed textarea_filed" style="margin: 70px auto; padding: 20px;">
+                <span class="note-model-close-btn close">&times;</span>
+                <h2>Write a Note:</h2>
+                <textarea style="height: 400px;" id="note" name="note" required></textarea>
+                <input style="background-color: var(--primary-color); font-size: 1.4rem;" class="submit-button btn"
+                       onclick="saveNote()" type="button"
+                       value="Save">
+            </div>
+        </section>
+
+        <!-- Notes list to be edited (delete,..) model -->
+        <section class="model edit-delete-notes-model" id="edit-delete-notes-model">
+            <div class="model-content notes-list-div">
+                <span class="edit-delete-notes-model-close-btn close">&times;</span>
+                <fieldset>
+                    <legend>Notes</legend>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Note</th>
+                            <th>Action</th>
+                        </tr>
+                        </thead>
+                        <tbody class="notes-list"></tbody>
+                    </table>
+                </fieldset>
+            </div>
+        </section>
+
+        <!-- Attachment model -->
+        <section class="model attachment-model" id="attachment-model">
+            <div class="model-content" style="margin: 70px auto; padding: 20px;">
+                <span class="attachment-model-close-btn close">&times;</span>
+                <h2>Add Attachment:</h2>
+                <input type="file" id="attachment">
+                <div class="attachment-model-content">
+                    <br><img id="attachment-image" alt="Image" style="max-height: 200px">
+                </div>
+                <br>
+                <input style=" width: auto; background-color: var(--primary-color); font-size: 1rem;"
+                       class="submit-button btn"
+                       onclick="saveAttachment()" type="button"
+                       value="Save">
+            </div>
+        </section>
+
+        <!-- Attachments list to be edited (delete,..) model -->
+        <section class="model edit-delete-attachments-model" id="edit-delete-attachments-model">
+            <div class="model-content attachments-list-div">
+                <span class="edit-delete-attachments-model-close-btn close">&times;</span>
+                <fieldset>
+                    <legend>Attachments</legend>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Attachment</th>
+                            <th>Action</th>
+                        </tr>
+                        </thead>
+                        <tbody class="attachments-list"></tbody>
+                    </table>
+                </fieldset>
+            </div>
+        </section>
+
+        <!-- Non editable view for admission application -->
+        <section class="model admission-model" id="admission-model">
+            <div class="model-content" style="margin: 70px auto; padding: 20px;">
+                <span class="admission-model-close-btn close">&times;</span>
+                <h2>Application:</h2>
+                <div>
+                    <table class="view-app-model-content" style="width: 70%"></table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary Report for admissions applications -->
+        <section class="model report-model" id="report-model">
+            <div class="model-content" style="margin: 70px auto; padding: 20px;">
+                <span class="admission-model-close-btn close">&times;</span>
+                <h2>Summary Report:</h2>
+                <div>
+                    <table class="report-model-content" style="width: 70%"></table>
+                </div>
+            </div>
+        </section>
+
+        <button class="btn action-btn green" id="summary-report-btn" onclick="generateSummaryReport()"
+                style="display:none; margin: auto;">
+            <b>Generate Applications Summary Report</b></button>
+    </div>
+
+</main>
+
+<script type="module" src="../js/user-home.js"></script>
+</body>
+</html>

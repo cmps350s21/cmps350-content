@@ -1,0 +1,107 @@
+.navbar {
+    background-color: var(--primary-color);
+    color: white;
+    height: 80px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: white;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: 2px #fff solid;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.navbar .logo-img {
+    padding: 10px;
+}
+
+/* Login Section */
+.login-form {
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+    padding: 40px;
+    justify-self: flex-end;
+}
+
+.login-form input {
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    margin: 20px 0;
+    padding: 3px;
+    font-size: 18px;
+}
+
+.login-form .login-btn, .login-form .register-btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-form .register-btn {
+    background: var(--dark-color);
+}
+
+/* Events Section */
+.events {
+    background-color: var(--primary-color);
+    margin: 3rem 0;
+    padding: 1.5rem 0;
+}
+
+.events .title {
+    color: white;
+    margin: 0 0 30px 0;
+}
+
+/* Stats Section */
+.stats {
+    margin: 3rem 0;
+
+}
+
+.stats .stats-content {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 3rem;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    padding: 3rem 0;
+    background-color: var(--dark-color);
+    color: #fff;
+    /* To Create a Fixed Footer at the bottom */
+    /*position: fixed;*/
+    /*left: 0;*/
+    /*bottom: 0;*/
+    /*width: 100%;*/
+}
+
+footer .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+footer a {
+    color: #fff;
+}
+
+footer .social a {
+    margin: 0 10px;
+}

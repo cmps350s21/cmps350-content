@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admission Application | School</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="../css/common-styles.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <!-- To get the header and footer styles -->
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <nav class="navbar">
+        <div class="container flex">
+            <h1>Admission Application Form</h1>
+        </div>
+    </nav>
+</header>
+
+<!-- Main -->
+<main>
+    <div class="container">
+        <form id="admission_form" class="form-div">
+            <fieldset>
+                <legend>Student Details</legend>
+                <div class="grid">
+                    <div class="filed">
+                        <label for="s_fname">First Name</label><br>
+                        <input type="text" id="s_fname" name="s_fname" required>
+                    </div>
+                    <div class="filed">
+                        <label for="s_lname">Last Name</label><br>
+                        <input type="text" id="s_lname" name="s_lname" required>
+                    </div>
+                    <div class="filed">
+                        <label for="s_DOB">Date of Birth</label><br>
+                        <input type="date" id="s_DOB" name="s_DOB" required>
+                    </div>
+                    <div class="radio_filed">
+                        <p>Gender</p>
+                        <input type="radio" id="s_gender_male" name="s_gender" value="male" required>
+                        <label for="s_gender_male">Male</label>&nbsp;&nbsp;&nbsp;
+                        <input type="radio" id="s_gender_female" name="s_gender" value="female" required>
+                        <label for="s_gender_female">Female</label><br>
+                    </div>
+                    <div class="filed">
+                        <label for="s_current_school_name">Current School Name</label><br>
+                        <input type="text" id="s_current_school_name" name="s_current_school_name" required>
+                    </div>
+                    <div class="filed">
+                        <label for="s_current_school_grade">Current School grade</label><br>
+                        <select name="s_current_school_grade" id="s_current_school_grade" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>
+                    <div class="filed">
+                        <label for="s_apply_school_grade">Apply to School grade</label><br>
+                        <select name="s_apply_school_grade" id="s_apply_school_grade" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>
+                    <div class="filed textarea_filed">
+                        <label for="s_message">Comments</label><br>
+                        <textarea id="s_message" name="s_message" required></textarea>
+                    </div>
+                </div>
+            </fieldset>
+            <input class="submit-button btn" type="submit" value="Submit Application">
+
+        </form>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="container grid grid-3">
+        <div>
+            <h1>School</h1>
+            <p>Copyright &copy; 2020 School<br>All Rights Reserved</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.htm">About</a></li>
+            </ul>
+        </nav>
+        <div class="social">
+            <a href="#"><i class="fab fa-github fa-2x"></i></a>
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="../lib/form-data-json.min.js"></script>
+<script type="module" src=../js/admission.js></script>
+</body>
+</html>

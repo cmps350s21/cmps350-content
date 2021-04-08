@@ -1,0 +1,21 @@
+#status-radio-group{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+}
+
+.status-radio-btn{
+    flex: 1;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+.attachment-list{
+    display: flex;
+    flex-direction: column;
+
+}
+.attachment-item{
+    margin: 5px;
+}

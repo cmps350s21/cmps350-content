@@ -1,0 +1,56 @@
+/* All Styles Related to forms */
+
+.filed {
+    margin: 0 20px;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.filed input, .filed select, .filed textarea {
+    font-size: 16px;
+    background-color: var(--light-color);
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--primary-color);
+}
+
+.filed textarea {
+    /* make the textarea filed higher */
+    height: 170px;
+}
+
+.textarea_filed {
+    /* make the textarea_filed div take whole row */
+    grid-column: 1/-1;
+}
+
+.radio_filed {
+    margin: 0 20px;
+    padding: 3px;
+    font-size: 16px;
+}
+
+legend {
+    margin-left: 15px;
+    padding: 0 5px;
+}
+
+/* override only one attribute form mainStyles grid class*/
+form .grid {
+    margin: 20px 0;
+}
+
+fieldset {
+    margin: 2rem 0;
+}
+
+.submit-button {
+    margin: 10px 0 25px 0;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.submit-button:hover {
+    transform: scale(0.98);
+}
