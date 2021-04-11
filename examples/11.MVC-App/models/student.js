@@ -9,8 +9,7 @@ const gradeToPoint = new Map([
     ["F", 0]
 ]);
 
-class Student {
-
+export class Student {
     constructor(studentId, firstname, lastname, program, courses) {
         this.studentId = studentId;
         this.firstname = firstname;
@@ -37,10 +36,6 @@ class Student {
         let totalPoints = this.courses.reduce( (prev, curr) => prev + (gradeToPoint.get(curr.grade) * curr.creditHours) , 0 );
         let totalCredits = this.courses.reduce( (prev, curr) => prev + curr.creditHours , 0 );
         //Round to 2 decimal points
-        return Math.round(totalPoints / totalCredits * 100) / 100;;
+        return Math.round(totalPoints / totalCredits * 100) / 100;
     }
 }
-
-//Make Student class available from other files
-module.exports = Student;
-

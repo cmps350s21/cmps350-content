@@ -3,43 +3,19 @@
     <meta charset="UTF-8">
     <title>MVC App</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" src="/views/css/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
-
-    <script>
-        /*
-        //Set the active class on the clicked nav-link
-        document.addEventListener("DOMContentLoaded", () => {
-            // get current URL path and assign 'active' class
-            const pathname = window.location.pathname
-            //set css class of the link corresponding to the current Url to active
-            $(`.nav > li > a[href='${pathname}']`).parent().addClass('active')
-        })
-        */
-    </script>
 </head>
 
 <body>
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">Lab 6 WebUI</a>
-        </div>
-        <ul class="nav navbar-nav">
-            <li><a href="/">Home</a></li>
-            <li><a href="/courses">Courses</a></li>
-            <li><a href="/students">Students</a></li>
-        </ul>
-    </div>
+<nav>
+    <h3>MVC App Example</h3>
+    <a href="/">Home</a>
+    <a href="/courses">Courses</a>
 </nav>
 
-<div class="container-fluid">
-    <div class="container">
-        <div class="row">
-            {{{body}}}
-        </div>
-    </div>
-</div>
+<main>
+    {{{body}}}
+</main>
 </body>
 </html>

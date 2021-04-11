@@ -21,6 +21,8 @@ app.get('/', (req, res) => {
     res.send(resText);
 });
 
+
+
 app.get('/quote', (req, res) => {
     const url = new URL('./public/quote.txt', import.meta.url);
     console.dir(url.toString());

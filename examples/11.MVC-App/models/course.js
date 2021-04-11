@@ -1,5 +1,4 @@
-
-module.exports = class Course {
+export class Course {
     constructor(courseCode, courseName, creditHours, semester, grade) {
         this.courseCode = courseCode;
         this.courseName = courseName;

@@ -1,9 +1,10 @@
+<br>
 <caption for="programsDD">Select a program:</caption>
 <select id="programsDD">
     <option value=""></option>
-    {{#programs}}
+    {{#each programs}}
         <option value="{{code}}"> {{name}}</option>
-    {{/programs}}
+    {{/each}}
 </select>
 
 <br><br>

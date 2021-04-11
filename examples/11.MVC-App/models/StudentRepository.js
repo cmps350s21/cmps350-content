@@ -1,5 +1,5 @@
-let Student = require('./student');
-let Course = require('./course');
+import { Student } from './student.js'
+import { Course } from './course.js';
 
 class StudentRepository {
     constructor() {
@@ -73,4 +73,4 @@ class StudentRepository {
     }
 }
 
-module.exports = new StudentRepository();
+export default new StudentRepository();

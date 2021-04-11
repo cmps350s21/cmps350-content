@@ -18,27 +18,29 @@
 
         //
         let nums = [1, 2, 3, 4, 5, 6, 7, 8];
-        let squaredEvenNums = [];
+        let squaredEvenNums = nums.filter(num => num % 2 === 0).map(num => num ** 2);
+        /*let squaredEvenNums = [];
         for (const num of nums) {
             if (num % 2 === 0) {
                 squaredEvenNums.push(num ** 2);
             }
-        }
+        }*/
         console.log("squaredEvenNums:", squaredEvenNums);
 
         //
         let colors = ["red", "green", "blue", "yellow", "black"]
-        let firstColor   = colors[0]
+        /*let firstColor   = colors[0]
         let secondColor = colors[1]
         let thirdColor  = colors[2]
-        let otherColors = [ colors[3], colors[4] ]
+        let otherColors = [ colors[3], colors[4] ]*/
+        let [firstColor, secondColor, thirdColor, ...otherColors] = colors;
         console.log(firstColor, secondColor, thirdColor, otherColors)
 
         //
         function average (a, b) {
             return (a + b) / 2;
         }
-
+        const average2 = (a, b) => (a + b) / 2;
 
         //
         const  hobbies = ["Swimming", "Reading", "Baking"];
@@ -47,12 +49,12 @@
             hobbiesHtml += '<li>' + h + '</li>';
         }
         hobbiesHtml += '</ul>';
-        console.log(hobbiesHtml);
+       //console.log(hobbiesHtml);
 
-        let hobbiesHtml2 = `<ul>
+        hobbiesHtml = `<ul>
             ${ hobbies.map( h => `<li>${h}</li>`).join('') }
         </ul>`;
-        console.log(hobbiesHtml2);
+        console.log(hobbiesHtml);
     </script>
 </body>
 </html>

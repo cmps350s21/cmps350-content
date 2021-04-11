@@ -17,7 +17,8 @@ async function handleRegionChange(region) {
     const countries = await getCountries(region);
     console.log(countries);
 
+    // AJAX
     const countriesUL = document.querySelector('#countriesList');
-    const countriesHtml = `${countries.map(c => `<li>${c.name} (${c.capital}) </li>`).join('\n')}`;
+    const countriesHtml = `${ countries.map(c => `<li>${c.name} (${c.capital}) </li>`).join('\n')}`;
     countriesUL.innerHTML = countriesHtml;
 }
