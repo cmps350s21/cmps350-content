@@ -3,12 +3,13 @@ const coursesTemplate = `
         {{#each courses}}
             <li>{{code}} - {{name}}</li>
         {{/each}}
-    </ul>`
+    </ul>`;
 
 //When the document is loaded in the browser then listen to programsDD on change event
-$(document).ready( () => {
-    $("#programsDD").on('change', onProgramChange)
-})
+document.addEventListener("DOMContentLoaded", () => {
+    const regionDD = document.querySelector('#programsDD');
+    regionDD.addEventListener('change', onProgramChange);
+});
 
 async function getCouses(programCode) {
     const url = `/api/courses/${programCode}`
@@ -17,9 +18,11 @@ async function getCouses(programCode) {
 }
 
 async function onProgramChange() {
-    const programCode = $(this).val()
+    const regionDD = document.querySelector('#programsDD');
+    const coursesList = document.querySelector('#courses-list');
+    const programCode = regionDD.value;
     if (programCode == "") {
-        $('#courses-list').empty()
+        coursesList.innerHTML = "";
         return
     }
 
@@ -31,7 +34,7 @@ async function onProgramChange() {
         const htmlTemplate = Handlebars.compile(coursesTemplate)
         const htmlContent = htmlTemplate( { courses } )
 
-        $('#courses-list').html(htmlContent)
+        coursesList.innerHTML = htmlContent;
     }
     catch (err) {
         console.log(err)

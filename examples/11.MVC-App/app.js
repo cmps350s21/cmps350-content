@@ -1,17 +1,17 @@
-const express	   =  require('express')
-const handlebars   =  require('express-handlebars')
+const express	   =  require('express');
+const handlebars   =  require('express-handlebars');
 
-const app		   =   express()
+const app		   =   express();
 
 //Allow serving static files from __dirname which is the current folder
-app.use( express.static(__dirname) )
+app.use( express.static(__dirname) );
 
 /*
  body-parser extracts the entire body portion of an incoming request and assigns it to req.body.
  Parses the body text as URL encoded data (which is how browsers send form data from forms with method set to POST)
  and exposes the resulting object (containing the keys and values) on req.body.
  */
-app.use( bodyParser.urlencoded({extended: true}) )
+app.use( express.urlencoded({extended: true}) )
 //If the body of incoming request is a json object then assign it to req.body property
 app.use( express.json() )
 
