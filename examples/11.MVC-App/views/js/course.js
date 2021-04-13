@@ -29,14 +29,14 @@ async function onProgramChange() {
     console.log("onProgramChange.programCode:", programCode)
 
     try {
-        const courses = await getCouses(programCode)
+        const courses = await getCouses(programCode);
 
-        const htmlTemplate = Handlebars.compile(coursesTemplate)
-        const htmlContent = htmlTemplate( { courses } )
+        const htmlTemplate = Handlebars.compile(coursesTemplate);
+        const htmlContent = htmlTemplate( { courses } );
 
         coursesList.innerHTML = htmlContent;
     }
     catch (err) {
-        console.log(err)
+        console.log(err);
     }
 }

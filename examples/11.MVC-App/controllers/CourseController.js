@@ -22,6 +22,7 @@ class CourseController {
 
     async index (req, res) {
         const programs = await courseRepository.getPrograms();
+        //res.json(programs);
         res.render('course', { programs });
     }
 }

@@ -1,6 +1,6 @@
 import express	from 'express';
 import handlebars  from 'express-handlebars';
-import router from './router.js'
+import router from './controllers/router.js'
 import { fileURLToPath } from 'url';
 
 const app = express();
@@ -9,7 +9,7 @@ const currentUrl = new URL('./', import.meta.url);
 const currentPath = fileURLToPath(currentUrl);
 console.log("currentUrl: ", currentUrl.toString(), "currentPath: ", currentPath);
 
-//Allow serving static files from __dirname which is the current folder
+//Allow serving static files from the current folder
 app.use( express.static(currentPath) );
 
 /*
@@ -40,4 +40,4 @@ const port = 3000;
 app.listen(port, () => {
     const host = "localhost";
     console.log(`App running @ http://${host}:${port}`);
-})
+});

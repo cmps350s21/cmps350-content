@@ -5,6 +5,7 @@
   "dependencies": {
     "express": "latest",
     "express-handlebars": "latest",
+    "formidable": "latest",
     "node-fetch": "latest"
   }
 }
